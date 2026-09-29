@@ -16,7 +16,7 @@ const TEST_STEP_DEFINITIONS = [
   { key: 'moteur-volet', title: 'Test moteur volet dans les 2 sens', patterns: [/Etape 8|Etape8|Etape 9|Etape9|Etape 10|Etape10|Etape 11|Etape11|Test moteur initié|moteur volet|Ouverture volet|Fermeture volet|Moteur volet fonctionne correctement/i] },
   { key: 'programmation-fins-course', title: 'Programmation fins de course', patterns: [/Etape 12|Etape12|Etape 13|Etape13|fins de course|Programmation.*fins|Impulsions\s*:\s*\d+|15 impulsions atteintes|fin de course fermée programmée|Ensuite, mettre l'interrupteur de PROGRAMMATION sur ON|Appuyer sur START pour lancer la programmation|Appuyer sur START lorsque c'est fait|Programmation initiée par START/i] },
   { key: 'verification-fins-course', title: 'Vérification des fins de course programmées et contact Sel', patterns: [/Étape\s*14|Etape\s*14|Etape14|🔍\s*Étape\s*14|Vérification\s+des\s+fins\s+de\s+course\s+programmées\s+et\s+contact\s+Sel|Vérification.*fins de course.*contact Sel|Etape15|Etape 15|Etape16|Etape 16|Etape17|Etape 17|Merci de mettre l.?interrupteur de PROGRAMMATION sur OFF|Appuyer sur START lorsque c’est fait|Appuyer sur START lorsque c'est fait|Ouverture atteinte|Fermeture atteinte|Contact Sel fonctionne|Etape16.*Fermeture atteinte.*15 impulsions/i] },
-  { key: 'defaut-capteur', title: 'Défaut capteur', patterns: [/Etape 18|Etape18|Etape 19|Etape19|Défaut capteur|défaut capteur|Simulation défaut capteur|Appuyer sur START pour quitter le panne/i] },
+  { key: 'defaut-capteur', title: 'Contact SEL', patterns: [/Etape 18|Etape18|Etape 19|Etape19|Défaut capteur|défaut capteur|Simulation défaut capteur|Appuyer sur START pour quitter le panne/i] },
   { key: 'ble-fermeture-volet', title: 'Fermeture volet avec Bluetooth pendant 20s', patterns: [/Etape\s*22\b/i] },
   { key: 'ble-ouverture-volet', title: 'Ouverture volet avec Bluetooth pendant 20s', patterns: [/Etape\s*23\b/i] },
   { key: 'remise-a-zero', title: 'Remise a zero et Fin complète du banc de test', patterns: [/RESTORED|restored|Remise a zero|remise a zero|remise à zéro|remise a zero/i] },
@@ -897,7 +897,7 @@ function SerialPortPanel({ onViewReports }) {
           return {
             ...step,
             status: 'passed',
-            message: step.id === 'defaut-capteur' ? 'Défaut capteur détecté - test validé. Appuyer sur START pour quitter le panne ' : 'Vérification des fins de course programmées et contact Sel OK.',
+            message: step.id === 'defaut-capteur' ? 'Contact SEL - test validé. Appuyer sur START pour contunier ' : 'Vérification des fins de course programmées et contact Sel OK.',
             timestamp: ts,
           }
         }
