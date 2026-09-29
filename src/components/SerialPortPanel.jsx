@@ -19,8 +19,8 @@ const TEST_STEP_DEFINITIONS = [
   { key: 'defaut-capteur', title: 'Défaut capteur', patterns: [/Etape 18|Etape18|Etape 19|Etape19|Défaut capteur|défaut capteur|Simulation défaut capteur|Appuyer sur START pour quitter le panne/i] },
   { key: 'ble-fermeture-volet', title: 'Fermeture volet avec Bluetooth pendant 20s', patterns: [/Etape\s*22\b/i] },
   { key: 'ble-ouverture-volet', title: 'Ouverture volet avec Bluetooth pendant 20s', patterns: [/Etape\s*23\b/i] },
-  { key: 'remise-a-zero', title: 'Remise a zero', patterns: [/RESTORED|restored|Remise a zero|remise a zero|remise à zéro|remise a zero/i] },
-  { key: 'fin-test', title: 'Fin complète du banc de test', patterns: [/Etape 26|Etape26|Fin complète du banc de test|Fin complète.*banc|Fin complète.*test|Fin complète|Etape26\s*🏁\s*Fin complète du banc de test/i] },
+  { key: 'remise-a-zero', title: 'Remise a zero et Fin complète du banc de test', patterns: [/RESTORED|restored|Remise a zero|remise a zero|remise à zéro|remise a zero/i] },
+  // { key: 'fin-test', title: 'Fin complète du banc de test', patterns: [/Etape 26|Etape26|Fin complète du banc de test|Fin complète.*banc|Fin complète.*test|Fin complète|Etape26\s*🏁\s*Fin complète du banc de test/i] },
 ]
 
 const API_ENDPOINT = import.meta.env.VITE_API_URL || ''
@@ -818,8 +818,12 @@ function SerialPortPanel({ onViewReports }) {
     }
 
     if (stepKey === 'fin-test') {
-      if (/Etape\s*28\b/i.test(cleanedLine)) {
-        return 'Etape 28 🏁 Fin complète du banc de test'
+      if (/Etape\s*26\s*🏁\s*Fin complète du banc de test|Fin complète du banc de test/i.test(cleanedLine)) {
+        return 'Etape 26 🏁 Fin complète du banc de test'
+      }
+
+      if (/Fin complète du banc de test !, clique sur reset pour refaire le test/i.test(cleanedLine)) {
+        return 'Etape 26 🏁 Fin complète du banc de test !, clique sur reset pour refaire le test'
       }
     }
 
@@ -877,12 +881,29 @@ function SerialPortPanel({ onViewReports }) {
         ? {
             ...step,
             status: 'passed',
-            message: 'Remise a zero avec success Appuier start pour finir le test',
+            message: 'Remise a zero avec success Appuier start pour finir le test. cliquer sur reset pour refair le test ',
             timestamp: ts,
           }
         : step,
       ))
       setLastResult('PASS - Remise a zero')
+      return
+    }
+
+    if (/Défaut capteur|défaut capteur|Etape\s*16\b.*Défaut capteur/i.test(cleanedLine)) {
+      const ts = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false })
+      setSteps((current) => current.map((step) => {
+        if (step.id === 'defaut-capteur' || step.id === 'verification-fins-course') {
+          return {
+            ...step,
+            status: 'passed',
+            message: step.id === 'defaut-capteur' ? 'Défaut capteur détecté - test validé. Appuyer sur START pour quitter le panne ' : 'Vérification des fins de course programmées et contact Sel OK.',
+            timestamp: ts,
+          }
+        }
+        return step
+      }))
+      setLastResult('PASS - Défaut capteur + vérification des fins de course')
       return
     }
 
@@ -954,7 +975,7 @@ function SerialPortPanel({ onViewReports }) {
         }
 
         if (step.id === 'verification-fins-course') {
-          const verificationSuccess = /Sauvegarde fins de course confirmée|Défaut capteur|défaut capteur|Etape\s*16\b.*Défaut capteur|Etape\s*20\b.*Ouverture atteinte \(15 impulsions\)|Ouverture atteinte.*15 impulsions|Fermeture atteinte|Contact Sel fonctionne correctement|Etape\s*(14|15|16|17|20)\s*✅.*(Ouverture|Fermeture|Contact Sel|Sauvegarde|Défaut capteur)/i.test(cleanedLine)
+          const verificationSuccess = /Défaut capteur|défaut capteur|Etape\s*16\b.*Défaut capteur|Sauvegarde fins de course confirmée|Etape\s*20\b.*Ouverture atteinte \(15 impulsions\)|Ouverture atteinte.*15 impulsions|Fermeture atteinte|Contact Sel fonctionne correctement|Etape\s*(14|15|16|17|20)\s*✅.*(Ouverture|Fermeture|Contact Sel|Sauvegarde|Défaut capteur)/i.test(cleanedLine)
           const nextState = {
             ...step,
             status: verificationSuccess ? 'passed' : 'pending',
@@ -964,6 +985,23 @@ function SerialPortPanel({ onViewReports }) {
 
           if (verificationSuccess) {
             setLastResult(`PASS - ${step.title} (vérification OK)`)
+          } else {
+            setLastResult(`${step.title} - ${displayMessage || 'En cours'}`)
+          }
+          return nextState
+        }
+
+        if (step.id === 'defaut-capteur') {
+          const completed = /Défaut capteur|défaut capteur|Etape\s*16\b/i.test(cleanedLine)
+          const nextState = {
+            ...step,
+            status: completed ? 'passed' : 'pending',
+            message: displayMessage || cleanedLine,
+            timestamp: ts,
+          }
+
+          if (completed) {
+            setLastResult(`PASS - ${step.title}`)
           } else {
             setLastResult(`${step.title} - ${displayMessage || 'En cours'}`)
           }
@@ -1022,7 +1060,7 @@ function SerialPortPanel({ onViewReports }) {
         }
 
         if (step.id === 'fin-test') {
-          const completed = /Etape\s*28\b/i.test(cleanedLine)
+          const completed = /Etape\s*26\s*🏁\s*Fin complète du banc de test|Fin complète du banc de test.*clique sur reset pour refaire le test|Fin complète du banc de test/i.test(cleanedLine)
           const nextState = {
             ...step,
             status: completed ? 'passed' : 'pending',
@@ -1042,7 +1080,7 @@ function SerialPortPanel({ onViewReports }) {
         }
 
         if (step.id === 'roue-codeuse') {
-          const finished = /TEST HARDWARE BLE TERMINÉ|Etape85\s*✅\s*ROUE\s*CODEUSE\s*=\s*\d+\s*OK/i.test(cleanedLine)
+          const finished = /TEST.*HARDWARE.*BLE|HARDWARE.*BLE.*TEST|Etape85\s*✅\s*ROUE\s*CODEUSE\s*=\s*\d+\s*OK/i.test(cleanedLine)
           const nextState = {
             ...step,
             status: finished ? 'passed' : 'pending',
