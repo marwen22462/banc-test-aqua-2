@@ -793,7 +793,7 @@ function SerialPortPanel({ onViewReports }) {
 
   // 4. Etape 13 last, so it no longer overrides the count
   if (/Etape\s*13\b/i.test(cleanedLine)) {
-    return '15/15 — ✅ Fin de course fermée programmée. mettre l’interrupteur de FORÇAGE sur OFF et PROGRAMMATION sur ON  Appuyer sur START'
+    return 'programmation fin de course mettre l’interrupteur de FORÇAGE sur OFF et PROGRAMMATION sur ON  Appuyer sur START'
   }
 }
     if (stepKey === 'roue-codeuse') {
@@ -818,12 +818,8 @@ function SerialPortPanel({ onViewReports }) {
     }
 
     if (stepKey === 'fin-test') {
-      if (/Etape\s*26\s*🏁\s*Fin complète du banc de test|Fin complète du banc de test/i.test(cleanedLine)) {
-        return 'Etape 26 🏁 Fin complète du banc de test'
-      }
-
-      if (/Fin complète du banc de test !, clique sur reset pour refaire le test/i.test(cleanedLine)) {
-        return 'Etape 26 🏁 Fin complète du banc de test !, clique sur reset pour refaire le test'
+      if (/Etape\s*28\b/i.test(cleanedLine)) {
+        return 'Etape 28 🏁 Fin complète du banc de test'
       }
     }
 
@@ -881,7 +877,7 @@ function SerialPortPanel({ onViewReports }) {
         ? {
             ...step,
             status: 'passed',
-            message: 'Remise a zero avec success',
+            message: 'Remise a zero avec success Appuier start pour finir le test',
             timestamp: ts,
           }
         : step,
@@ -958,7 +954,7 @@ function SerialPortPanel({ onViewReports }) {
         }
 
         if (step.id === 'verification-fins-course') {
-          const verificationSuccess = /Sauvegarde fins de course confirmée|Etape\s*20\b.*Ouverture atteinte \(15 impulsions\)|Ouverture atteinte.*15 impulsions|Fermeture atteinte|Contact Sel fonctionne correctement|Etape\s*(14|15|16|17|20)\s*✅.*(Ouverture|Fermeture|Contact Sel|Sauvegarde)/i.test(cleanedLine)
+          const verificationSuccess = /Sauvegarde fins de course confirmée|Défaut capteur|défaut capteur|Etape\s*16\b.*Défaut capteur|Etape\s*20\b.*Ouverture atteinte \(15 impulsions\)|Ouverture atteinte.*15 impulsions|Fermeture atteinte|Contact Sel fonctionne correctement|Etape\s*(14|15|16|17|20)\s*✅.*(Ouverture|Fermeture|Contact Sel|Sauvegarde|Défaut capteur)/i.test(cleanedLine)
           const nextState = {
             ...step,
             status: verificationSuccess ? 'passed' : 'pending',
@@ -1026,7 +1022,7 @@ function SerialPortPanel({ onViewReports }) {
         }
 
         if (step.id === 'fin-test') {
-          const completed = /Etape\s*26\s*🏁\s*Fin complète du banc de test|Fin complète du banc de test.*clique sur reset pour refaire le test|Fin complète du banc de test/i.test(cleanedLine)
+          const completed = /Etape\s*28\b/i.test(cleanedLine)
           const nextState = {
             ...step,
             status: completed ? 'passed' : 'pending',

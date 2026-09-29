@@ -2,19 +2,39 @@
   "name": "testapp",
   "private": true,
   "version": "0.0.0",
+  "description": "CF Cover test bench application",
+  "author": "CF Cover",
   "type": "module",
   "main": "public/electron.js",
   "scripts": {
     "dev": "vite --host --port 4174 --strictPort",
     "build": "vite build",
+    "build:win": "npm run build && electron-builder --win --publish never",
+    "dist": "npm run build:win",
     "lint": "eslint .",
     "preview": "vite preview --host --port 4174 --strictPort",
     "start": "concurrently -k \"npm run dev\" \"wait-on http://localhost:4174 && electron .\"",
     "electron": "concurrently -k \"npm run dev\" \"wait-on http://localhost:4174 && electron .\""
   },
+  "build": {
+    "appId": "com.testapp.cfcover",
+    "productName": "CF Cover Test",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "public/**/*",
+      "package.json",
+      "public/electron.js",
+      "public/preload.js"
+    ],
+    "win": {
+      "target": "nsis"
+    }
+  },
   "dependencies": {
     "@serialport/parser-readline": "^13.0.0",
-    "electron": "^44.4.1",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "serialport": "^13.0.0"
@@ -25,6 +45,8 @@
     "@types/react-dom": "^19.2.7",
     "@vitejs/plugin-react": "^6.1.1",
     "concurrently": "^10.0.5",
+    "electron": "^44.4.1",
+    "electron-builder": "^26.0.0",
     "eslint": "^10.10.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.6",
