@@ -1,0 +1,2298 @@
+
+15:52:00 [Bench] Réactivation alimentation...
+15:52:00 [Bench] ctivation alimentation...
+15:52:00 [CF carte] \u0000
+15:52:00 [CF carte] load:0x3��q\u00138\u0006\u0018�\u0018\u0000���8�\u000c�|b\u000c��8x\u0007�l��W<n=�p\u0000�\u0000\u0000\u0000\u0000�\u0000\u0000\u0000\u0000\u0000��3y�@2�\u000d\u0000P�\u0000�ap@\u0010p �\u0003\u001e�8?\u0000�\u0000�\u0000���\u0000��\u001c��\u00008\u0000\u0000�\u0000\u0000\u0000�\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�\u0000\u0000\u0000�\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000ets Jul 29 2019 12:21:46
+15:52:00 [CF carte] rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))
+15:52:00 [CF carte] waiting for download
+15:52:00 [CF carte] ets Jul 29 2019 12:21:46\u000d
+\u000d
+rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))\u000d
+waiting for download
+15:52:01 [Bench] Etape6  Relais alimentation réactivé.
+15:52:01 [Bench] Etape6  Relais alimentation réactivé.
+15:52:03 [Bench] Etape7  Veuillez téléverser le programme dans la carte maintenant.
+15:52:03 [Bench] Etape7  Appuyer sur START une fois le téléversement terminé.
+15:52:03 [Bench] Etape7  Veuillez téléverser le programme dans la carte maintenant.\u000d
+Etape7  Appuyer sur START une fois le téléversement terminé.
+15:52:04 [CF carte] --- CLOSED COM7 ---
+15:52:29 [CF carte] --- OPENED COM7 ---
+15:52:32 [Bench] Etape7  Télé
+15:52:32 [Bench] Etape7  Téléversement confirmé par START.
+15:52:32 [Bench] versement confirmé par START.
+15:52:34 [Bench] Etap
+15:52:34 [Bench] Etape7  Fin du téléversement.
+15:52:34 [Bench] e7  Fin du téléversement.
+15:52:35 [CF carte] \u0000
+15:52:41 [Bench] Réactivation finale de l’alimentation...
+15:52:41 [Bench] Réactivation finale de l’alimentation...
+15:52:41 [CF carte] \u0000ets Jul 29 2019 12:21:46
+15:52:41 [CF carte] rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+15:52:41 [CF carte] configsip: 0, SPIWP:0xee
+15:52:41 [CF carte] clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+15:52:41 [CF carte] mode:DIO, clock div:1
+15:52:41 [CF carte] load:0x3fff0030,len:4916
+15:52:41 [CF carte] load:0x40078000,len:16492
+15:52:41 [CF carte] load:0x40080400,len:4
+15:52:41 [CF carte] load:0x40080404,len:3524
+15:52:41 [CF carte] entry 0x400805b8
+15:52:41 [CF carte] ets Jul 29 2019 12:21:46\u000d
+\u000d
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)\u000d
+configsip: 0, SPIWP:0xee\u000d
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00\u000d
+mode:DIO, clock div:1\u000d
+load:0x3fff0030,len:4916\u000d
+load:0x40078000,len:16492\u000d
+load:0x40080400,len:4\u000d
+load:0x40080404,len:3524\u000d
+entry 0x400805b8
+15:52:41 [CF carte] Débutsetupù: 195236 bytes
+15:52:41 [CF carte] Débutsetupù: 195236 bytes
+15:52:42 [CF carte] CONFIG I/O OK !vers final
+15:52:42 [CF carte] CONFIG I/O OK !vers final
+15:52:42 [CF carte] RoueCodeuse : 0
+15:52:42 [CF carte] RoueCodeuse : 0
+15:52:42 [CF carte] SWIMMING POOL LENGTH : 0
+15:52:42 [CF carte] COVER ACTUAL POSITION : 0
+15:52:42 [CF carte] __RAMPE : 9
+15:52:42 [CF carte] NEW EEPROM 25    !!!
+15:52:42 [CF carte] SWIMMING POOL LENGTH : 0\u000d
+COVER ACTUAL POSITION : 0\u000d
+__RAMPE : 9\u000d
+NEW EEPROM 25    !!!
+15:52:42 [CF carte] A0:B7:65:14:93:FAmacAdd : A0:B7:65:14:93:FA
+15:52:42 [CF carte] LivePoolVs-F8931465B7A0
+15:52:42 [CF carte] A0:B7:65:14:93:FAmacAdd : A0:B7:65:14:93:FA\u000d
+LivePoolVs-F8931465B7A0
+15:52:44 [Bench] Test fonctionnel terminé.
+15:52:44 [Bench] Réactivation finale de l’alimentation...
+15:52:44 [Bench] ========================================
+15:52:44 [Bench] ÉTAPE 8 : TEST HARDWARE PAR BLE
+15:52:44 [Bench] ========================================
+15:52:44 [Bench] Etape81  Attente du nom de l'équipement...
+15:52:44 [Bench] Attente des données UART...
+15:52:44 [Bench] UART reçu : LivePoolVs-F8931465B7A0
+15:52:44 [Bench] Nom : LivePoolVs-F8931465B7A0
+15:52:44 [Bench] Nom et MAC récupérés !
+15:52:44 [Bench] Test fonctionnel terminé.\u000d
+ Réactivation finale de l’alimentation...\u000d
+
+========================================\u000d
+ÉTAPE 8 : TEST HARDWARE PAR BLE\u000d
+========================================\u000d
+Etape81  Attente du nom de l'équipement...\u000d
+ Attente des données UART...\u000d
+UART reçu : LivePoolVs-F8931465B7A0\u000d
+Nom : LivePoolVs-F8931465B7A0\u000d
+ Nom et MAC récupérés !
+15:52:44 [Bench] Nom reçu : LivePo
+15:52:44 [Bench] Nom reçu : LivePoolVs-F8931465B7A0
+15:52:44 [Bench] Etape81  Recherche de la carte BLE...
+15:52:44 [Bench] Device trouvé. Prêt à se connecter.
+15:52:44 [Bench] olVs-F8931465B7A0\u000d
+Etape81  Recherche de la carte BLE...\u000d
+Device trouvé. Prêt à se connecter.
+15:52:46 [Bench] Connexion à a0:b7:65:14:93:fa
+15:52:46 [Bench] Connexion à a0:b7:65:14:93:fa
+15:52:46 [CF carte] device connect
+15:52:46 [CF carte] device connect
+15:52:46 [Bench] Connecté au serveur BLE
+15:52:46 [Bench] Etape21 BLE connecté
+15:52:46 [Bench] Connecté au serveur BLE\u000d
+Etape21 BLE connecté
+15:52:46 [Bench] Etape82  Connexion BLE réussie
+15:52:46 [Bench] Etape82  Connexion BLE réussie
+15:52:48 [Bench] Etape83
+15:52:48 [Bench] TEST FORÇAGE
+15:52:48 [Bench] Etape83 
+ TEST FORÇAGE\u000d
+Etape83  Mett
+15:52:48 [Bench] Etape83  Mettre le FORÇAGE sur ON
+15:52:48 [Bench] Etape83  Attente de la valeur forc = 1
+15:52:48 [Bench] re le FORÇAGE sur ON\u000d
+Etape83  Attente de la valeur forc = 1
+15:52:52 [CF carte] ADC POWER_REFF : 1199
+15:52:52 [CF carte] DEFAULT POWER_REFF : 1229
+15:52:52 [CF carte] scaaann
+15:52:52 [CF carte] ADC POWER_REFF : 1199\u000d
+DEFAULT POWER_REFF : 1229\u000d
+scaaann
+15:52:52 [CF carte] anciendefPas de defaut
+15:52:52 [CF carte] def actPas de defaut
+15:52:52 [CF carte] *** ELSE LOOP _CoverPosNow : 0
+15:52:52 [CF carte] *** ELSE LOOP _CoverLength : 0
+15:52:52 [CF carte] *** ELSE LOOP TypePool = 0
+15:52:52 [CF carte] anciendefPas de defaut\u000d
+def actPas de defaut\u000d
+*** ELSE LOOP _CoverPosNow : 0\u000d
+*** ELSE LOOP _CoverLength : 0\u000d
+*** ELSE LOOP TypePool = 0
+15:53:01 [CF carte] networks found
+15:53:01 [CF carte] networks found
+15:53:01 [CF carte] 0000000000
+15:53:01 [CF carte] 0000000000
+15:53:01 [Bench] Valeur BLE reçue pour forc =
+15:53:01 [Bench] Valeur BLE reçue pour forc = 1
+15:53:01 [Bench] Etape83  FORÇAGE OK : forc = 1
+15:53:01 [Bench] 1\u000d
+Etape83  FORÇAGE OK : forc = 1
+15:53:01 [CF carte] Device Connected
+15:53:01 [CF carte] Device Connected
+15:53:03 [Bench] Etape84
+15:53:03 [Bench] Etape84 
+ TEST PRO
+15:53:03 [Bench] TEST PROGRAMMATION
+15:53:03 [Bench] Etape84  Mettre PROGRAMMATION sur ON
+15:53:03 [Bench] Etape84  Attente de prog = 1
+15:53:03 [Bench] GRAMMATION\u000d
+Etape84  Mettre PROGRAMMATION sur ON\u000d
+Etape84  Attente de prog = 1
+15:53:03 [Bench] Valeur BLE reçue pour prog = 0
+15:53:03 [Bench] Valeur BLE reçue pour prog = 0
+15:53:05 [Bench] Valeur BLE reçue pour prog = 0
+15:53:05 [Bench] Valeur BLE reçue pour prog = 0
+15:53:06 [Bench] Valeur BLE reçue pour prog = 1
+15:53:06 [Bench] Valeur BLE reçue pour prog = 1\u000d
+Etape84  PROGRAMMATION OK :
+15:53:06 [Bench] Etape84  PROGRAMMATION OK : prog = 1
+15:53:06 [Bench] prog = 1
+15:53:08 [Bench] ========================================
+15:53:08 [Bench] ========================================\u000d
+TEST
+15:53:08 [Bench] TEST ROUE CODEUSE
+15:53:08 [Bench] ========================================
+15:53:08 [Bench] 👉 Régler ROUE CODEUSE sur : 0
+15:53:08 [Bench] Attente de la nouvelle valeur BLE...
+15:53:08 [Bench] ROUE CODEUSE\u000d
+========================================\u000d
+\u000d
+ 👉 Régler ROUE CODEUSE sur : 0\u000d
+ Attente de la nouvelle valeur BLE...
+15:53:08 [Bench] Valeur BLE reçue pour RoueCodeuse = 0
+15:53:08 [Bench] Etape85  ROUE CODEUSE = 0 OK
+15:53:08 [Bench] Valeur BLE reçue pour RoueCodeuse = 0\u000d
+Etape85  ROUE CODEUSE = 0 OK
+15:53:10 [Bench] 👉 Régler ROUE CODEUSE sur : 1
+15:53:10 [Bench] 👉 Régler ROUE CODEUSE sur : 1\u000d
+ Attente
+15:53:10 [Bench] Attente de la nouvelle valeur BLE...
+15:53:10 [Bench] de la nouvelle valeur BLE...
+15:53:11 [Bench] Valeur BLE reçue pour RoueCodeuse = 0
+15:53:11 [Bench] Valeur BLE reçue pour RoueCodeuse = 0
+15:53:12 [Bench] Valeur BLE reçue pour RoueCodeuse = 0
+15:53:12 [Bench] Valeur BLE reçue pour RoueCodeuse = 0
+15:53:13 [Bench] Valeur BLE reçue pour RoueCodeus
+15:53:13 [Bench] Valeur BLE reçue pour RoueCodeuse = 1
+15:53:13 [Bench] Etape85  ROUE CODEUSE = 1 OK
+15:53:13 [Bench] e = 1\u000d
+Etape85  ROUE CODEUSE = 1 OK
+15:53:13 [CF carte] SENSITIVITY CHANGED => 1
+15:53:13 [CF carte] SENSITIVITY CHANGED => 1
+15:53:15 [Bench] 👉 Régler ROUE C
+15:53:15 [Bench] 👉 Régler ROUE CODEUSE sur : 2
+15:53:15 [Bench] Attente de la nouvelle valeur BLE...
+15:53:15 [Bench] ODEUSE sur : 2\u000d
+ Attente de la nouvelle valeur BLE...
+15:53:15 [Bench] Valeur BLE reçue p
+15:53:15 [Bench] Valeur BLE reçue pour RoueCodeuse = 1
+15:53:15 [Bench] our RoueCodeuse = 1
+15:53:17 [Bench] Valeur BLE re
+15:53:17 [Bench] Valeur BLE reçue pour RoueCodeuse = 1
+15:53:17 [Bench] çue pour RoueCodeuse = 1
+15:53:18 [Bench] Valeur
+15:53:18 [Bench] Valeur BLE reçue pour RoueCodeuse = 2
+15:53:18 [Bench] Etape85  ROUE CODEUSE = 2 OK
+15:53:18 [Bench] BLE reçue pour RoueCodeuse = 2\u000d
+Etape85  ROUE CODEUSE = 2 OK
+15:53:18 [CF carte] SENSITIVITY CHANGED => 2
+15:53:18 [CF carte] SENSITIVITY CHANGED => 2
+15:53:20 [Bench] 👉 Régler ROUE CODEUSE sur : 3
+15:53:20 [Bench] 👉 Régler ROUE CODEUSE sur : 3\u000d
+ Attente de la
+15:53:20 [Bench] Attente de la nouvelle valeur BLE...
+15:53:20 [Bench] nouvelle valeur BLE...
+15:53:20 [Bench] Valeur BLE reçue pour RoueCodeuse = 2
+15:53:20 [Bench] Valeur BLE reçue pour RoueCodeuse = 2
+15:53:21 [Bench] Valeur BLE reçue pour RoueCodeuse = 3
+15:53:21 [Bench] Valeur BLE reçue pour RoueCodeuse = 3\u000d
+Eta
+15:53:21 [Bench] Etape85  ROUE CODEUSE = 3 OK
+15:53:21 [Bench] pe85  ROUE CODEUSE = 3 OK
+15:53:22 [CF carte] SENSITIVITY CHA
+15:53:22 [CF carte] SENSITIVITY CHANGED => 3
+15:53:22 [CF carte] NGED => 3
+15:53:23 [Bench] 👉 Régler ROUE CODEUSE sur
+15:53:23 [Bench] 👉 Régler ROUE CODEUSE sur : 4
+15:53:23 [Bench] Attente de la nouvelle valeur BLE...
+15:53:23 [Bench] : 4\u000d
+ Attente de la nouvelle valeur BLE...
+15:53:24 [Bench] Valeur BLE reçue pour RoueCod
+15:53:24 [Bench] Valeur BLE reçue pour RoueCodeuse = 3
+15:53:24 [Bench] euse = 3
+15:53:25 [Bench] Valeur BLE reçue pour R
+15:53:25 [Bench] Valeur BLE reçue pour RoueCodeuse = 3
+15:53:25 [Bench] oueCodeuse = 3
+15:53:26 [CF carte] SEN
+15:53:26 [CF carte] SENSITIVITY CHANGED => 6
+15:53:26 [CF carte] SITIVITY CHANGED => 6
+15:53:26 [Bench] Valeur BLE reçue
+15:53:26 [Bench] Valeur BLE reçue pour RoueCodeuse = 4
+15:53:26 [Bench] Etape85  ROUE CODEUSE = 4 OK
+15:53:26 [Bench] pour RoueCodeuse = 4\u000d
+Etape85  ROUE CODEUSE = 4 OK
+15:53:26 [CF carte] S
+15:53:26 [CF carte] SENSITIVITY CHANGED => 4
+15:53:26 [CF carte] ENSITIVITY CHANGED => 4
+15:53:28 [Bench] 👉
+15:53:28 [Bench] 👉 Régler ROUE CODEUSE sur : 5
+15:53:28 [Bench] Attente de la nouvelle valeur BLE...
+15:53:28 [Bench] Régler ROUE CODEUSE sur : 5\u000d
+ Attente de la nouvelle valeur BLE...
+15:53:29 [Bench] Valeur BLE reçue pour RoueCodeuse = 4
+15:53:29 [Bench] Valeur BLE reçue pour RoueCodeuse = 4
+15:53:29 [CF carte] SENSITIVITY CHANGED => 5
+15:53:29 [CF carte] SENSITIVITY CHANGED => 5
+15:53:30 [Bench] Valeur BLE reçue pour RoueCodeuse = 5
+15:53:30 [Bench] Valeur BLE reçue pour RoueCodeuse = 5\u000d
+Etape85  ROUE CO
+15:53:30 [Bench] Etape85  ROUE CODEUSE = 5 OK
+15:53:30 [Bench] DEUSE = 5 OK
+15:53:31 [CF carte] Connecting to Wi-Fi...
+15:53:31 [CF carte] ������������������������������
+15:53:31 [CF carte] Cbeginnnnn
+15:53:31 [CF carte] Connecting to Wi-Fi...  \u000d
+������������������������������\u000d
+Cbeginnnnn
+15:53:32 [CF carte] SENSITIVITY CHANGED => 6
+15:53:32 [CF carte] SENSITIVITY CHANGED => 6
+15:53:32 [Bench] 👉 Régler ROUE CODEUSE sur : 6
+15:53:32 [Bench] 👉 Régler ROUE CODEUSE sur : 6\u000d
+ Attent
+15:53:32 [Bench] Attente de la nouvelle valeur BLE...
+15:53:32 [Bench] e de la nouvelle valeur BLE...
+15:53:32 [Bench] Valeur BLE reçue pour RoueCodeuse = 6
+15:53:32 [Bench] Valeur BLE reçue pour RoueCodeuse = 6\u000d
+Et
+15:53:32 [Bench] Etape85  ROUE CODEUSE = 6 OK
+15:53:32 [Bench] ape85  ROUE CODEUSE = 6 OK
+15:53:34 [CF carte] SENSITIVITY CHANGED => 7
+15:53:34 [CF carte] SENSITIVITY CHANGED => 7
+15:53:34 [Bench] 👉 Régler ROUE CODEUSE sur
+15:53:34 [Bench] 👉 Régler ROUE CODEUSE sur : 7
+15:53:34 [Bench] Attente de la nouvelle valeur BLE...
+15:53:34 [Bench] : 7\u000d
+ Attente de la nouvelle valeur BLE...
+15:53:35 [Bench] Valeur BLE reçue pour RoueCodeuse = 7
+15:53:35 [Bench] Etape85  ROUE CODEUSE = 7 OK
+15:53:35 [Bench] Valeur BLE reçue pour RoueCodeuse = 7\u000d
+Etape85  ROUE CODEUSE = 7 OK
+15:53:36 [CF carte] SENSITIVITY CHANGED =
+15:53:36 [CF carte] SENSITIVITY CHANGED => 8
+15:53:36 [CF carte] > 8
+15:53:37 [Bench] 👉 Régler ROUE CODEUSE sur : 8
+15:53:37 [Bench] 👉 Régler ROUE CODEUSE sur : 8\u000d
+ At
+15:53:37 [Bench] Attente de la nouvelle valeur BLE...
+15:53:37 [Bench] tente de la nouvelle valeur BLE...
+15:53:37 [Bench] Valeur BLE reçue pour RoueCodeuse = 8
+15:53:37 [Bench] Valeur BLE reçue pour RoueCodeuse = 8
+15:53:37 [Bench] Etape85  ROUE CODEUSE = 8 OK
+15:53:37 [Bench] Etape85  ROUE CODEUSE = 8 OK
+15:53:38 [CF carte] SENSITIVITY CHA
+15:53:38 [CF carte] SENSITIVITY CHANGED => 9
+15:53:38 [CF carte] NGED => 9
+15:53:39 [Bench] 👉 Régler ROUE CODEUSE
+15:53:39 [Bench] 👉 Régler ROUE CODEUSE sur : 9
+15:53:39 [Bench] Attente de la nouvelle valeur BLE...
+15:53:39 [Bench] sur : 9\u000d
+ Attente de la nouvelle valeur BLE...
+15:53:39 [Bench] Valeur BLE reçue pour RoueCodeuse = 9
+15:53:39 [Bench] Etape85  ROUE CODEUSE = 9 OK
+15:53:39 [Bench] Valeur BLE reçue pour RoueCodeuse = 9\u000d
+Etape85  ROUE CODEUSE = 9 OK
+15:53:41 [Bench] ========================================
+15:53:41 [Bench] ========================================\u000d
+✅ TE
+15:53:41 [Bench] ✅ TEST HARDWARE BLE TERMINÉ
+15:53:41 [Bench] ========================================
+15:53:41 [Bench] ST HARDWARE BLE TERMINÉ\u000d
+========================================
+15:53:43 [Bench] Etape86  Merci de mettre l’interrupteur de forçage sur ON (sur la carte testée).
+15:53:43 [Bench] Etape86  Puis appuyer sur START pour lancer le test moteur volet...
+15:53:43 [Bench] Etape86  Merci de mettre l’interrupteur de forçage sur ON (sur la carte testée).\u000d
+Etape86  Puis appuyer sur START pour lancer le test moteur volet...
+15:53:50 [Bench] Etape86  Test moteur initié par START.
+15:53:50 [Bench] Etape86  Test moteur initié par START.
+15:53:52 [Bench] Etape8  Ouverture volet (Relais OPEN activé
+15:53:52 [Bench] Etape8  Ouverture volet (Relais OPEN activé) pendant 20s...
+15:53:52 [Bench] ) pendant 20s...
+15:53:52 [CF carte] forcage openn
+15:53:52 [CF carte] ADC POWER_REFF : 1180
+15:53:52 [CF carte] POWER_REFF : 1210
+15:53:52 [CF carte] FRCG OPENING COVER !!
+15:53:52 [CF carte] forcage openn\u000d
+ADC POWER_REFF : 1180\u000d
+POWER_REFF : 1210\u000d
+FRCG OPENING COVER !!
+15:53:53 [Bench] État Nc Pump (IO22) : LOW (0)
+15:53:53 [Bench] État No Pump (IO21) : HIGH (1)
+15:53:53 [Bench] Etape9  Contact pump fonctionne : moteur tourne.
+15:53:53 [Bench] État Nc Pump (IO22) : LOW (0)\u000d
+État No Pump (IO21) : HIGH (1)\u000d
+Etape9  Contact pump fonctionne : moteur tourne.
+15:53:54 [CF carte] _CoverPosNow => -1
+15:53:54 [CF carte] _CoverPosNow => -1
+15:53:54 [CF carte] _CoverPosNow => -2
+15:53:54 [CF carte] _CoverPosNow => -2
+15:53:55 [CF carte] _CoverPosNow => -3
+15:53:55 [CF carte] _CoverPosNow => -3
+15:53:55 [CF carte] _CoverPosNow => -4
+15:53:55 [CF carte] _CoverPosNow => -4
+15:53:56 [CF carte] _CoverPosNow => -5
+15:53:56 [CF carte] _CoverPosNow => -5
+15:53:56 [CF carte] _CoverPosNow => -6
+15:53:56 [CF carte] _CoverPosNow => -6
+15:53:57 [CF carte] _CoverPosNow => -7
+15:53:57 [CF carte] _CoverPosNow => -7
+15:53:57 [CF carte] _CoverPosNow => -8
+15:53:57 [CF carte] _CoverPosNow => -8
+15:53:58 [CF carte] _CoverPosNow => -9
+15:53:58 [CF carte] _CoverPosNow => -9
+15:53:58 [CF carte] _CoverPosNow => -10
+15:53:58 [CF carte] _CoverPosNow => -10
+15:53:59 [CF carte] _CoverPosNow => -11
+15:53:59 [CF carte] _CoverPosNow => -11
+15:53:59 [CF carte] _CoverPosNow => -12
+15:53:59 [CF carte] _CoverPosNow => -12
+15:53:59 [CF carte] _CoverPosNow => -13
+15:53:59 [CF carte] _CoverPosNow => -13
+15:54:00 [CF carte] _CoverPosNow => -14
+15:54:00 [CF carte] _CoverPosNow => -14
+15:54:00 [CF carte] _CoverPosNow => -15
+15:54:00 [CF carte] _CoverPosNow => -15
+15:54:00 [CF carte] _CoverPosNow => -16
+15:54:00 [CF carte] _CoverPosNow => -16
+15:54:01 [CF carte] _CoverPosNow => -17
+15:54:01 [CF carte] _CoverPosNow => -17
+15:54:01 [CF carte] _CoverPosNow => -18
+15:54:01 [CF carte] _CoverPosNow => -18
+15:54:02 [CF carte] _CoverPosNow => -19
+15:54:02 [CF carte] _CoverPosNow => -19
+15:54:02 [CF carte] _CoverPosNow =>
+15:54:02 [CF carte] _CoverPosNow => -20
+15:54:02 [CF carte] -20
+15:54:03 [CF carte] _CoverPosNow => -21
+15:54:03 [CF carte] _CoverPosNow => -21
+15:54:03 [CF carte] _
+15:54:03 [CF carte] _CoverPosNow => -22
+15:54:03 [CF carte] CoverPosNow => -22
+15:54:04 [CF carte] _CoverPosNow => -23
+15:54:04 [CF carte] _CoverPosNow => -23
+15:54:04 [CF carte] _CoverPosNo
+15:54:04 [CF carte] _CoverPosNow => -24
+15:54:04 [CF carte] w => -24
+15:54:04 [CF carte] _CoverPosNow => -25
+15:54:04 [CF carte] _CoverPosNow => -25
+15:54:05 [CF carte] _CoverPosNow => -26
+15:54:05 [CF carte] _CoverPosNow => -26
+15:54:05 [CF carte] _CoverPosNow => -27
+15:54:05 [CF carte] _CoverPosNow => -27
+15:54:05 [CF carte] _CoverPosNow => -28
+15:54:05 [CF carte] _CoverPosNow => -28
+15:54:06 [CF carte] _CoverPosNow => -29
+15:54:06 [CF carte] _CoverPosNow => -29
+15:54:06 [CF carte] _CoverPosNow => -30
+15:54:06 [CF carte] _CoverPosNow => -30
+15:54:07 [CF carte] _CoverPosNow => -31
+15:54:07 [CF carte] _CoverPosNow => -31
+15:54:07 [CF carte] _CoverPosNow => -32
+15:54:07 [CF carte] _CoverPosNow => -32
+15:54:08 [CF carte] _CoverPosNow => -33
+15:54:08 [CF carte] _CoverPosNow => -33
+15:54:08 [CF carte] _CoverPosNow => -34
+15:54:08 [CF carte] _CoverPosNow => -34
+15:54:08 [CF carte] _CoverPosNow => -35
+15:54:08 [CF carte] _CoverPosNow => -35
+15:54:09 [CF carte] _CoverPosNow => -36
+15:54:09 [CF carte] _CoverPosNow => -36
+15:54:09 [CF carte] _CoverPosNow => -37
+15:54:09 [CF carte] _CoverPosNow => -37
+15:54:09 [CF carte] _CoverPosNow => -38
+15:54:09 [CF carte] _CoverPosNow => -38
+15:54:10 [CF carte] _CoverPosNow => -39
+15:54:10 [CF carte] _CoverPosNow => -39
+15:54:10 [CF carte] _CoverPosNow => -40
+15:54:10 [CF carte] _CoverPosNow => -40
+15:54:11 [CF carte] _CoverPosNow => -41
+15:54:11 [CF carte] _CoverPosNow => -41
+15:54:11 [CF carte] _CoverPosNow => -42
+15:54:11 [CF carte] _CoverPosNow => -42
+15:54:12 [CF carte] _CoverPosNow => -43
+15:54:12 [CF carte] _CoverPosNow => -43
+15:54:12 [CF carte] _CoverPosNow => -44
+15:54:12 [CF carte] _CoverPosNow => -44
+15:54:13 [CF carte] _CoverPosNow => -45
+15:54:13 [CF carte] _CoverPosNow => -45
+15:54:13 [CF carte] _CoverPosNow => -46
+15:54:13 [CF carte] _CoverPosNow => -46
+15:54:13 [CF carte] _CoverPosNow => -47
+15:54:13 [CF carte] _CoverPosNow => -47
+15:54:14 [CF carte] _CoverPosNow => -48
+15:54:14 [CF carte] _CoverPosNow => -48
+15:54:14 [CF carte] _Cove
+15:54:14 [CF carte] _CoverPosNow => -49
+15:54:14 [CF carte] rPosNow => -49
+15:54:14 [CF carte] _CoverPosNow => -50
+15:54:14 [CF carte] _CoverPosNow => -50
+15:54:15 [Bench] Etape10  Relais OPEN désactivé.
+15:54:15 [Bench] Etape10  Relais OPEN désactivé.
+15:54:16 [CF carte] SET REFERENCE OK !!
+15:54:16 [CF carte] NEW COVER POS => -51
+15:54:16 [CF carte] SET REFERENCE OK !!\u000d
+NEW COVER POS => -51\u000d
+SET REFERENCE
+15:54:16 [CF carte] SET REFERENCE OK !!
+15:54:16 [CF carte] NEW COVER POS => -51
+15:54:16 [CF carte] OK !!\u000d
+NEW COVER POS => -51
+15:54:16 [CF carte] anciendefPas de defaut
+15:54:16 [CF carte] def actPas de defaut
+15:54:16 [CF carte] *** ELSE LOOP _CoverPosNow : -51
+15:54:16 [CF carte] *** ELSE LOOP _CoverLength : 0
+15:54:16 [CF carte] *** ELSE LOOP TypePool = 0
+15:54:16 [CF carte] anciendefPas de defaut\u000d
+def actPas de defaut\u000d
+*** ELSE LOOP _CoverPosNow : -51\u000d
+*** ELSE LOOP _CoverLength : 0\u000d
+*** ELSE LOOP TypePool = 0
+15:54:17 [Bench] Fermeture volet (Relais CLOSE activé) pendant 20s...
+15:54:17 [Bench] Fermeture volet (Relais CLOSE activé) pendant 20s...
+15:54:17 [CF carte] ADC POWER_REFF : 1173
+15:54:17 [CF carte] POWER_REFF : 1203
+15:54:17 [CF carte] FRCG CLOSING COVER !!
+15:54:17 [CF carte] ADC POWER_REFF : 1173\u000d
+POWER_REFF : 1203\u000d
+FRCG CLOSING COVER !!
+15:54:18 [CF carte] _CoverPosNow => -50
+15:54:18 [CF carte] _CoverPosNow => -50
+15:54:19 [CF carte] _CoverPosNow => -49
+15:54:19 [CF carte] _CoverPosNow => -49
+15:54:20 [CF carte] _CoverPosNow => -48
+15:54:20 [CF carte] _CoverPosNow => -48
+15:54:21 [CF carte] _CoverPosNow => -47
+15:54:21 [CF carte] _CoverPosNow => -47
+15:54:21 [CF carte] _CoverPosNow => -46
+15:54:21 [CF carte] _CoverPosNow => -46
+15:54:22 [CF carte] _Cove
+15:54:22 [CF carte] _CoverPosNow => -45
+15:54:22 [CF carte] rPosNow => -45
+15:54:23 [CF carte] _CoverPosNow => -44
+15:54:23 [CF carte] _CoverPosNow => -44
+15:54:23 [CF carte] _CoverPosNow => -43
+15:54:23 [CF carte] _CoverPosNow => -43
+15:54:24 [CF carte] _CoverPosNow => -42
+15:54:24 [CF carte] _CoverPosNow => -42
+15:54:24 [CF carte] _CoverPosNow => -41
+15:54:24 [CF carte] _CoverPosNow => -41
+15:54:25 [CF carte] _CoverPosN
+15:54:25 [CF carte] _CoverPosNow => -40
+15:54:25 [CF carte] ow => -40
+15:54:25 [CF carte] _CoverPosNow => -39
+15:54:25 [CF carte] _CoverPosNow => -39
+15:54:25 [CF carte] _CoverPosNow => -38
+15:54:25 [CF carte] _CoverPosNow => -38
+15:54:26 [CF carte] _CoverPosNow => -37
+15:54:26 [CF carte] _CoverPosNow => -37
+15:54:26 [CF carte] _CoverPosNow => -36
+15:54:26 [CF carte] _CoverPosNow => -36
+15:54:27 [CF carte] _CoverPosNow => -35
+15:54:27 [CF carte] _CoverPosNow => -35
+15:54:27 [CF carte] _CoverPosNow => -34
+15:54:27 [CF carte] _CoverPosNow => -34
+15:54:28 [CF carte] _CoverPosNow => -33
+15:54:28 [CF carte] _CoverPosNow => -33
+15:54:28 [CF carte] _CoverPosNow => -32
+15:54:28 [CF carte] _CoverPosNow => -32
+15:54:28 [CF carte] _CoverPosNow => -31
+15:54:28 [CF carte] _CoverPosNow => -31
+15:54:29 [CF carte] _CoverPosN
+15:54:29 [CF carte] _CoverPosNow => -30
+15:54:29 [CF carte] ow => -30
+15:54:29 [CF carte] _CoverPosNow => -29
+15:54:29 [CF carte] _CoverPosNow => -29
+15:54:30 [CF carte] _CoverPosNow => -28
+15:54:30 [CF carte] _CoverPosNow => -28
+15:54:30 [CF carte] _CoverPosNow => -27
+15:54:30 [CF carte] _CoverPosNow => -27
+15:54:30 [CF carte] _CoverPosNow => -26
+15:54:30 [CF carte] _CoverPosNow => -26
+15:54:31 [CF carte] _CoverPosNow => -25
+15:54:31 [CF carte] _CoverPosNow => -25
+15:54:31 [CF carte] _CoverPosNow => -24
+15:54:31 [CF carte] _CoverPosNow => -24
+15:54:32 [CF carte] _CoverPosNow => -23
+15:54:32 [CF carte] _CoverPosNow => -23
+15:54:32 [CF carte] _
+15:54:32 [CF carte] _CoverPosNow => -22
+15:54:32 [CF carte] CoverPosNow => -22
+15:54:33 [CF carte] _CoverPosNow => -21
+15:54:33 [CF carte] _CoverPosNow => -21
+15:54:33 [CF carte] _CoverPosNow => -20
+15:54:33 [CF carte] _CoverPosNow => -20
+15:54:33 [CF carte] _CoverPosNow => -19
+15:54:33 [CF carte] _CoverPosNow => -19
+15:54:34 [CF carte] _CoverPosNow => -18
+15:54:34 [CF carte] _CoverPosNow => -18
+15:54:34 [CF carte] _CoverPosNow => -17
+15:54:34 [CF carte] _CoverPosNow => -17
+15:54:34 [CF carte] _CoverPosNow => -16
+15:54:34 [CF carte] _CoverPosNow => -16
+15:54:35 [CF carte] _CoverPosNow => -15
+15:54:35 [CF carte] _CoverPosNow => -15
+15:54:35 [CF carte] _CoverPosNow => -14
+15:54:35 [CF carte] _CoverPosNow => -14
+15:54:36 [CF carte] _CoverPosNow => -13
+15:54:36 [CF carte] _CoverPosNow => -13
+15:54:36 [CF carte] _CoverPosNo
+15:54:36 [CF carte] _CoverPosNow => -12
+15:54:36 [CF carte] w => -12
+15:54:37 [CF carte] _CoverPosNow => -11
+15:54:37 [CF carte] _CoverPosNow => -11
+15:54:37 [Bench] Etape11  Relais CLOSE désactivé.
+15:54:37 [Bench] Etape11  Relais CLOSE désactivé.
+15:54:38 [CF carte] SET REFERENCE OK !!
+15:54:38 [CF carte] NEW COVER POS => -10
+15:54:38 [CF carte] SET REFERENCE OK !!
+15:54:38 [CF carte] NEW COVER POS => -10
+15:54:38 [CF carte] SET REFERENCE OK !!\u000d
+NEW COVER POS => -10\u000d
+SET REFERENCE OK !!\u000d
+NEW COVER POS => -10
+15:54:38 [CF carte] anciendefPas de defaut
+15:54:38 [CF carte] def actPas de defaut
+15:54:38 [CF carte] *** ELSE LOOP _CoverPosNow : -10
+15:54:38 [CF carte] *** ELSE LOOP _CoverLength : 0
+15:54:38 [CF carte] *** ELSE LOOP TypePool = 0
+15:54:38 [CF carte] anciendefPas de defaut\u000d
+def actPas de defaut\u000d
+*** ELSE LOOP _CoverPosNow : -10\u000d
+*** ELSE LOOP _CoverLength : 0\u000d
+*** ELSE LOOP TypePool = 0
+15:54:39 [Bench] Etape11  Moteur volet fonctionne correctement dans les deux sens.
+15:54:39 [Bench] Etape13 : Programmation des fins de course volet piscine.
+15:54:39 [Bench] Etape13  Merci de mettre l'interrupteur de FORÇAGE sur OFF.
+15:54:39 [Bench] Etape13  Ensuite, mettre l'interrupteur de PROGRAMMATION sur ON.
+15:54:39 [Bench] Etape13  Appuyer sur START pour lancer la programmation...
+15:54:39 [Bench] Etape11  Moteur volet fonctionne correctement dans les deux sens.\u000d
+Etape13 : Programmation des fins de course volet piscine.\u000d
+Etape13  Merci de mettre l'interrupteur de FORÇAGE sur OFF.\u000d
+Etape13  Ensuite, mettre l'interrupteur de PROGRAMMATION sur ON.\u000d
+Etape13  Appuyer sur START pour lancer la programmation...
+15:54:45 [Bench] Etape13 Programmation initiée par START.
+15:54:45 [Bench] Etape13 Programmation initiée par START.
+15:54:47 [Bench] Etape13  Début de la fermeture du volet : comptage des impulsions...
+15:54:47 [Bench] Impulsions : 0
+15:54:47 [Bench] | GPIO27 = 0
+15:54:47 [Bench] | GPIO2 = 1
+15:54:47 [Bench] Etape13  Début de la fermeture du volet : comptage des impulsions...\u000d
+ Impulsions : 0\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:47 [CF carte] $$$ COVER DATA DELETED !!
+15:54:47 [CF carte] ADC POWER_REFF : 1178
+15:54:47 [CF carte] POWER_REFF : 1208
+15:54:47 [CF carte] PROG CLOSING COVER !!
+15:54:47 [CF carte] $$$ COVER DATA DELETED !!\u000d
+ADC POWER_REFF : 1178\u000d
+POWER_REFF : 1208\u000d
+PROG CLOSING COVER !!
+15:54:47 [Bench] Impulsions : 0
+15:54:47 [Bench] | GPIO27 = 0
+15:54:47 [Bench] | GPIO2 = 1
+15:54:47 [Bench] Impulsions : 0\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:47 [Bench] Impulsions : 0
+15:54:47 [Bench] | GPIO27 = 0
+15:54:47 [Bench] | GPIO2 = 1
+15:54:47 [Bench] Impulsions : 0\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:48 [Bench] Impulsions : 0
+15:54:48 [Bench] | GPIO27 = 0
+15:54:48 [Bench] | GPIO2 = 1
+15:54:48 [Bench] Impulsions : 0\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:48 [Bench] Impulsions : 0
+15:54:48 [Bench] | GPIO27 = 0
+15:54:48 [Bench] | GPIO2 = 1
+15:54:48 [Bench] Impulsions : 0\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:48 [Bench] Impulsions : 0
+15:54:48 [Bench] | GPIO27 = 0
+15:54:48 [Bench] | GPIO2 = 1
+15:54:48 [Bench] Impulsions : 0\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:48 [Bench] Impulsions : 0
+15:54:48 [Bench] | GPIO27 = 0
+15:54:48 [Bench] | GPIO2 = 1
+15:54:48 [Bench] Impulsions : 0\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:48 [Bench] Impulsions : 0
+15:54:48 [Bench] | GPIO27 = 0
+15:54:48 [Bench] | GPIO2 = 1
+15:54:48 [Bench] Impulsions : 0\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:49 [Bench] Impulsions : 0
+15:54:49 [Bench] | GPIO27 = 0
+15:54:49 [Bench] | GPIO2 = 1
+15:54:49 [Bench] Impulsions : 0\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:49 [Bench] Impulsions : 0
+15:54:49 [Bench] | GPIO27 = 0
+15:54:49 [Bench] | GPIO2 = 1
+15:54:49 [Bench] Impulsions : 0\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:49 [Bench] Impulsions : 0
+15:54:49 [Bench] | GPIO27 = 1
+15:54:49 [Bench] | GPIO2 = 1
+15:54:49 [Bench] Impulsions : 0\u000d
+ | GPIO27 = 1\u000d
+ | GPIO2 = 1
+15:54:49 [CF carte] started time is : 1979
+15:54:49 [CF carte] PWM__img : 393
+15:54:49 [CF carte] started time is : 1979\u000d
+PWM__img : 393
+15:54:49 [CF carte] NEW COVER POS => 1
+15:54:49 [CF carte] NEW COVER POS => 1
+15:54:49 [Bench] Impulsions : 0
+15:54:49 [Bench] | GPIO27 = 1
+15:54:49 [Bench] | GPIO2 = 1
+15:54:49 [Bench] Impulsions : 0\u000d
+ | GPIO27 = 1\u000d
+ | GPIO2 = 1
+15:54:49 [Bench] Impulsions : 0
+15:54:49 [Bench] | GPIO27 = 1
+15:54:49 [Bench] | GPIO2 = 1
+15:54:49 [Bench] Impulsions : 0\u000d
+ | GPIO27 = 1\u000d
+ | GPIO2 = 1
+15:54:50 [Bench] Impulsions : 0
+15:54:50 [Bench] | GPIO27 = 1
+15:54:50 [Bench] | GPIO2 = 1
+15:54:50 [Bench] Impulsions : 0\u000d
+ | GPIO27 = 1\u000d
+ | GPIO2 = 1
+15:54:50 [CF carte] NEW COVER POS => 2
+15:54:50 [CF carte] NEW COVER POS => 2
+15:54:50 [Bench] Impulsions : 1
+15:54:50 [Bench] | GPIO27 = 0
+15:54:50 [Bench] Impulsions : 1\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:50 [Bench] | GPIO2 = 1
+15:54:50 [Bench] Nouvelle impulsion détectée
+15:54:50 [Bench] Nouvelle impulsion détectée
+15:54:50 [Bench] Impulsions : 1
+15:54:50 [Bench] | GPIO27 = 0
+15:54:50 [Bench] | GPIO2 = 1
+15:54:50 [Bench] Impulsions : 1\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:50 [Bench] Impulsions : 1
+15:54:50 [Bench] | GPIO27 = 0
+15:54:50 [Bench] Impulsions : 1\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 =
+15:54:50 [Bench] | GPIO2 = 1
+15:54:50 [Bench] 1
+15:54:50 [Bench] Impulsions : 1
+15:54:50 [Bench] | GPIO27 = 0
+15:54:50 [Bench] | GPIO2 = 1
+15:54:50 [Bench] Impulsions : 1\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:51 [Bench] Impulsions : 1
+15:54:51 [Bench] | GPIO27 = 0
+15:54:51 [Bench] Impulsions : 1\u000d
+ | GPIO27 = 0\u000d
+ | GPIO
+15:54:51 [Bench] | GPIO2 = 1
+15:54:51 [Bench] 2 = 1
+15:54:51 [Bench] Impulsions : 1
+15:54:51 [Bench] | GPIO27 = 1
+15:54:51 [Bench] | GPIO2 = 1
+15:54:51 [Bench] Impulsions : 1\u000d
+ | GPIO27 = 1\u000d
+ | GPIO2 = 1
+15:54:51 [CF carte] NEW COVER POS => 3
+15:54:51 [CF carte] NEW COVER POS => 3
+15:54:51 [Bench] Impulsions : 1
+15:54:51 [Bench] | GPIO27 = 1
+15:54:51 [Bench] Impulsions : 1\u000d
+ | GPIO27 = 1\u000d
+ | GP
+15:54:51 [Bench] | GPIO2 = 1
+15:54:51 [Bench] IO2 = 1
+15:54:51 [Bench] Impulsions : 2
+15:54:51 [Bench] | GPIO27 = 0
+15:54:51 [Bench] | GPIO2 = 1
+15:54:51 [Bench] Nouvelle impulsion détectée
+15:54:51 [Bench] Impulsions : 2\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1\u000d
+ Nouvelle impulsion détectée
+15:54:51 [CF carte] NEW COVER POS => 4
+15:54:51 [CF carte] NEW COVER POS => 4
+15:54:51 [Bench] Impulsions : 2
+15:54:51 [Bench] | GPIO27 = 0
+15:54:51 [Bench] | GPIO2 = 1
+15:54:51 [Bench] Impulsions : 2\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:52 [Bench] Impulsions : 2
+15:54:52 [Bench] | GPIO27 = 0
+15:54:52 [Bench] | GPIO2 = 1
+15:54:52 [Bench] Impulsions : 2\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:52 [Bench] Impulsions : 2
+15:54:52 [Bench] | GPIO27 = 0
+15:54:52 [Bench] | GPIO2 = 1
+15:54:52 [Bench] Impulsions : 2\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:52 [Bench] Impulsions : 2
+15:54:52 [Bench] | GPIO27 = 0
+15:54:52 [Bench] | GPIO2 = 1
+15:54:52 [Bench] Impulsions : 2\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:52 [CF carte] NEW COVER POS => 5
+15:54:52 [CF carte] NEW COVER POS => 5
+15:54:52 [Bench] Impulsions : 2
+15:54:52 [Bench] | GPIO27 = 1
+15:54:52 [Bench] | GPIO2 = 1
+15:54:52 [Bench] Impulsions : 2\u000d
+ | GPIO27 = 1\u000d
+ | GPIO2 = 1
+15:54:52 [Bench] Impulsions : 2
+15:54:52 [Bench] | GPIO27 = 1
+15:54:52 [Bench] | GPIO2 = 1
+15:54:52 [Bench] Impulsions : 2\u000d
+ | GPIO27 = 1\u000d
+ | GPIO2 = 1
+15:54:53 [CF carte] NEW COVER POS => 6
+15:54:53 [CF carte] NEW COVER POS => 6
+15:54:53 [Bench] Impulsions : 3
+15:54:53 [Bench] | GPIO27 = 0
+15:54:53 [Bench] | GPIO2 = 1
+15:54:53 [Bench] Nouvelle impulsion détectée
+15:54:53 [Bench] Impulsions : 3\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1\u000d
+ Nouvelle impulsion détectée
+15:54:53 [Bench] Impulsions : 3
+15:54:53 [Bench] | GPIO27 = 0
+15:54:53 [Bench] | GPIO2 = 1
+15:54:53 [Bench] Impulsions : 3\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:53 [Bench] Impulsions : 3
+15:54:53 [Bench] | GPIO27 = 0
+15:54:53 [Bench] | GPIO2 = 1
+15:54:53 [Bench] Impulsions : 3\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:53 [Bench] Impulsions : 3
+15:54:53 [Bench] | GPIO27 = 0
+15:54:53 [Bench] | GPIO2 = 1
+15:54:53 [Bench] Impulsions : 3\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:53 [CF carte] NEW COVER POS => 7
+15:54:53 [CF carte] NEW COVER POS => 7
+15:54:53 [Bench] Impulsions : 3
+15:54:53 [Bench] | GPIO27 = 1
+15:54:53 [Bench] | GPIO2 = 1
+15:54:53 [Bench] Impulsions : 3\u000d
+ | GPIO27 = 1\u000d
+ | GPIO2 = 1
+15:54:54 [CF carte] NEW COVER POS => 8
+15:54:54 [CF carte] NEW COVER POS => 8
+15:54:54 [Bench] Impulsions : 4
+15:54:54 [Bench] | GPIO27 = 0
+15:54:54 [Bench] | GPIO2 = 1
+15:54:54 [Bench] Nouvelle impulsion détectée
+15:54:54 [Bench] Impulsions : 4\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1\u000d
+ Nouvelle impulsion détectée
+15:54:54 [Bench] Impulsions : 4
+15:54:54 [Bench] | GPIO27 = 0
+15:54:54 [Bench] | GPIO2 = 1
+15:54:54 [Bench] Impulsions : 4\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:54 [Bench] Impulsions : 4
+15:54:54 [Bench] | GPIO27 = 0
+15:54:54 [Bench] | GPIO2 = 1
+15:54:54 [Bench] Impulsions : 4\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:54 [Bench] Impulsions : 4
+15:54:54 [Bench] | GPIO27 = 1
+15:54:54 [Bench] | GPIO2 = 1
+15:54:54 [Bench] Impulsions : 4\u000d
+ | GPIO27 = 1\u000d
+ | GPIO2 = 1
+15:54:54 [CF carte] NEW COVER POS => 9
+15:54:54 [CF carte] NEW COVER POS => 9
+15:54:54 [Bench] Impulsions : 4
+15:54:54 [Bench] | GPIO27 = 1
+15:54:54 [Bench] | GPIO2 = 1
+15:54:54 [Bench] Impulsions : 4\u000d
+ | GPIO27 = 1\u000d
+ | GPIO2 = 1
+15:54:54 [CF carte] NEW COVER POS => 10
+15:54:54 [CF carte] NEW COVER POS => 10
+15:54:55 [Bench] Impulsions : 5
+15:54:55 [Bench] | GPIO27 = 0
+15:54:55 [Bench] | GPIO2 = 1
+15:54:55 [Bench] Nouvelle impulsion détectée
+15:54:55 [Bench] Impulsions : 5\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1\u000d
+ Nouvelle impulsion détectée
+15:54:55 [Bench] Impulsions : 5
+15:54:55 [Bench] | GPIO27 = 0
+15:54:55 [Bench] | GPIO2 = 1
+15:54:55 [Bench] Impulsions : 5\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:55 [Bench] Impulsions : 5
+15:54:55 [Bench] | GPIO27 = 0
+15:54:55 [Bench] | GPIO2 = 1
+15:54:55 [Bench] Impulsions : 5\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:55 [CF carte] NEW
+15:54:55 [CF carte] NEW COVER POS => 11
+15:54:55 [CF carte] COVER POS => 11
+15:54:55 [Bench] Impulsions : 5
+15:54:55 [Bench] | GPIO27 = 1
+15:54:55 [Bench] | GPIO2 = 1
+15:54:55 [Bench] Impulsions : 5\u000d
+ | GPIO27 = 1\u000d
+ | GPIO2 = 1
+15:54:55 [CF carte] NEW
+15:54:55 [CF carte] NEW COVER POS => 12
+15:54:55 [CF carte] COVER POS => 12
+15:54:55 [Bench] Impulsions : 6
+15:54:55 [Bench] | GPIO27 = 0
+15:54:55 [Bench] | GPIO2 = 1
+15:54:55 [Bench] Impulsions : 6\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1\u000d
+ N
+15:54:55 [Bench] Nouvelle impulsion détectée
+15:54:55 [Bench] ouvelle impulsion détectée
+15:54:56 [Bench] Impulsions : 6
+15:54:56 [Bench] | GPIO27 = 0
+15:54:56 [Bench] | GPIO2 = 1
+15:54:56 [Bench] Impulsions : 6\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:56 [Bench] Impulsions : 6
+15:54:56 [Bench] | GPIO27 = 0
+15:54:56 [Bench] | GPIO2 = 1
+15:54:56 [Bench] Impulsions : 6\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:56 [CF carte] NEW COVER POS => 13
+15:54:56 [CF carte] NEW COVER POS => 13
+15:54:56 [Bench] Impulsions : 6
+15:54:56 [Bench] | GPIO27 = 1
+15:54:56 [Bench] | GPIO2 = 1
+15:54:56 [Bench] Impulsions : 6\u000d
+ | GPIO27 = 1\u000d
+ | GPIO2 = 1
+15:54:56 [CF carte] NEW COVER POS => 14
+15:54:56 [CF carte] NEW COVER POS => 14
+15:54:56 [Bench] Impulsions : 7
+15:54:56 [Bench] | GPIO27 = 0
+15:54:56 [Bench] Impulsions : 7\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:56 [Bench] | GPIO2 = 1
+15:54:56 [Bench] Nouvelle impulsion détectée
+15:54:56 [Bench] Nouvelle impulsion détectée
+15:54:56 [Bench] Impulsions : 7
+15:54:56 [Bench] | GPIO27 = 0
+15:54:56 [Bench] | GPIO2 = 1
+15:54:56 [Bench] Impulsions : 7\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:57 [Bench] Impulsions : 7
+15:54:57 [Bench] | GPIO27 = 0
+15:54:57 [Bench] Impulsions : 7\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2
+15:54:57 [Bench] | GPIO2 = 1
+15:54:57 [Bench] = 1
+15:54:57 [CF carte] NEW COVER
+15:54:57 [CF carte] NEW COVER POS => 15
+15:54:57 [CF carte] POS => 15
+15:54:57 [Bench] Impulsions : 7
+15:54:57 [Bench] | GPIO27 = 1
+15:54:57 [Bench] | GPIO2 = 1
+15:54:57 [Bench] Impulsions : 7\u000d
+ | GPIO27 = 1\u000d
+ | GPIO2 = 1
+15:54:57 [CF carte] NEW COVER POS => 16
+15:54:57 [CF carte] NEW COVER POS => 16
+15:54:57 [Bench] Impulsions : 8
+15:54:57 [Bench] | GPIO27 = 0
+15:54:57 [Bench] Impulsions : 8\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2
+15:54:57 [Bench] | GPIO2 = 1
+15:54:57 [Bench] Nouvelle impulsion détectée
+15:54:57 [Bench] = 1\u000d
+ Nouvelle impulsion détectée
+15:54:57 [Bench] Impulsions : 8
+15:54:57 [Bench] | GPIO27 = 0
+15:54:57 [Bench] | GPIO2 = 1
+15:54:57 [Bench] Impulsions : 8\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:57 [Bench] Impulsions : 8
+15:54:57 [Bench] | GPIO27 = 0
+15:54:57 [Bench] Impulsions : 8\u000d
+ | GPIO27 = 0\u000d
+ | GP
+15:54:57 [Bench] | GPIO2 = 1
+15:54:57 [Bench] IO2 = 1
+15:54:58 [CF carte] NEW COVE
+15:54:58 [CF carte] NEW COVER POS => 17
+15:54:58 [CF carte] R POS => 17
+15:54:58 [Bench] Impulsions : 8
+15:54:58 [Bench] | GPIO27 = 1
+15:54:58 [Bench] | GPIO2 = 1
+15:54:58 [Bench] Impulsions : 8\u000d
+ | GPIO27 = 1\u000d
+ | GPIO2 = 1
+15:54:58 [CF carte] NEW COVER POS => 18
+15:54:58 [CF carte] NEW COVER POS => 18
+15:54:58 [Bench] Impulsions : 9
+15:54:58 [Bench] | GPIO27 = 0
+15:54:58 [Bench] Impulsions : 9\u000d
+ | GPIO27 = 0\u000d
+ |
+15:54:58 [Bench] | GPIO2 = 1
+15:54:58 [Bench] Nouvelle impulsion détectée
+15:54:58 [Bench] GPIO2 = 1\u000d
+ Nouvelle impulsion détectée
+15:54:58 [Bench] Impulsions : 9
+15:54:58 [Bench] | GPIO27 = 0
+15:54:58 [Bench] | GPIO2 = 1
+15:54:58 [Bench] Impulsions : 9\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:58 [Bench] Impulsions : 9
+15:54:58 [Bench] | GPIO27 = 0
+15:54:58 [Bench] Impulsions : 9\u000d
+ | GPIO27 = 0
+15:54:58 [Bench] | GPIO2 = 1
+15:54:58 [Bench] | GPIO2 = 1
+15:54:58 [CF carte] NEW COVER POS => 19
+15:54:58 [CF carte] NEW COVER POS => 19
+15:54:58 [Bench] Impulsions : 9
+15:54:58 [Bench] | GPIO27 = 1
+15:54:58 [Bench] | GPIO2 = 1
+15:54:58 [Bench] Impulsions : 9\u000d
+ | GPIO27 = 1\u000d
+ | GPIO2 = 1
+15:54:59 [CF carte] NEW COVER POS => 20
+15:54:59 [CF carte] NEW COVER POS => 20
+15:54:59 [Bench] Impulsions : 10
+15:54:59 [Bench] Impulsions : 10\u000d
+ | GPIO27 = 0
+15:54:59 [Bench] | GPIO27 = 0
+15:54:59 [Bench] | GPIO2 = 1
+15:54:59 [Bench] Nouvelle impulsion détectée
+15:54:59 [Bench] | GPIO2 = 1\u000d
+ Nouvelle impulsion détectée
+15:54:59 [Bench] Impulsions : 10
+15:54:59 [Bench] | GPIO27 = 0
+15:54:59 [Bench] | GPIO2 = 1
+15:54:59 [Bench] Impulsions : 10\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:54:59 [Bench] Impulsions : 10
+15:54:59 [Bench] Impulsions : 10\u000d
+ | GPIO27
+15:54:59 [Bench] | GPIO27 = 0
+15:54:59 [Bench] | GPIO2 = 1
+15:54:59 [Bench] = 0\u000d
+ | GPIO2 = 1
+15:54:59 [Bench] Impulsions : 10
+15:54:59 [Bench] | GPIO27 = 1
+15:54:59 [Bench] | GPIO2 = 1
+15:54:59 [Bench] Impulsions : 10\u000d
+ | GPIO27 = 1\u000d
+ | GPIO2 = 1
+15:54:59 [CF carte] NEW COVER POS =>
+15:54:59 [CF carte] NEW COVER POS => 21
+15:54:59 [CF carte] 21
+15:54:59 [Bench] Impulsions : 11
+15:54:59 [Bench] Impulsions : 11\u000d
+ | GPIO2
+15:55:00 [CF carte] NEW COVER POS => 22
+15:55:00 [CF carte] NEW COVER POS => 22
+15:55:00 [Bench] | GPIO27 = 0
+15:55:00 [Bench] | GPIO2 = 1
+15:55:00 [Bench] Nouvelle impulsion détectée
+15:55:00 [Bench] 7 = 0\u000d
+ | GPIO2 = 1\u000d
+ Nouvelle impulsion détectée
+15:55:00 [Bench] Impulsions : 11
+15:55:00 [Bench] | GPIO27 = 0
+15:55:00 [Bench] | GPIO2 = 1
+15:55:00 [Bench] Impulsions : 11\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:55:00 [Bench] Impulsions : 11
+15:55:00 [Bench] Impulsions : 11\u000d
+ | GPI
+15:55:00 [Bench] | GPIO27 = 0
+15:55:00 [Bench] | GPIO2 = 1
+15:55:00 [Bench] O27 = 0\u000d
+ | GPIO2 = 1
+15:55:00 [Bench] Impulsions : 11
+15:55:00 [Bench] | GPIO27 = 1
+15:55:00 [Bench] | GPIO2 = 1
+15:55:00 [Bench] Impulsions : 11\u000d
+ | GPIO27 = 1\u000d
+ | GPIO2 = 1
+15:55:00 [CF carte] NEW COVER POS => 23
+15:55:00 [CF carte] NEW COVER POS => 23
+15:55:00 [Bench] Impulsions : 12
+15:55:00 [Bench] Impulsions : 12\u000d
+ | GP
+15:55:00 [Bench] | GPIO27 = 0
+15:55:00 [Bench] | GPIO2 = 1
+15:55:00 [Bench] Nouvelle impulsion détectée
+15:55:00 [Bench] IO27 = 0\u000d
+ | GPIO2 = 1\u000d
+ Nouvelle impulsion détectée
+15:55:00 [CF carte] NEW COVER POS => 24
+15:55:00 [CF carte] NEW COVER POS => 24
+15:55:00 [Bench] Impulsions : 12
+15:55:00 [Bench] | GPIO27 = 0
+15:55:00 [Bench] | GPIO2 = 1
+15:55:00 [Bench] Impulsions : 12\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:55:01 [Bench] Impulsions : 12
+15:55:01 [Bench] Impulsions : 12\u000d
+ |
+15:55:01 [Bench] | GPIO27 = 0
+15:55:01 [Bench] | GPIO2 = 1
+15:55:01 [Bench] GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:55:01 [Bench] Impulsions : 12
+15:55:01 [Bench] | GPIO27 = 1
+15:55:01 [Bench] | GPIO2 = 1
+15:55:01 [Bench] Impulsions : 12\u000d
+ | GPIO27 = 1\u000d
+ | GPIO2 = 1
+15:55:01 [CF carte] 📡 Scan WiFi...
+15:55:01 [CF carte] scaaann
+15:55:01 [CF carte] no networks found
+15:55:01 [CF carte] 📡 Scan WiFi...\u000d
+scaaann\u000d
+no networks found
+15:55:01 [CF carte] NEW COVER POS => 25
+15:55:01 [CF carte] NEW COVER POS => 25
+15:55:01 [Bench] Impulsions : 13
+15:55:01 [Bench] Impulsions : 13
+15:55:01 [CF carte] NEW COVER POS => 26
+15:55:01 [CF carte] NEW COVER POS => 26
+15:55:01 [Bench] | GPIO27 = 0
+15:55:01 [Bench] | GPIO2 = 1
+15:55:01 [Bench] Nouvelle impulsion détectée
+15:55:01 [Bench] | GPIO27 = 0\u000d
+ | GPIO2 = 1\u000d
+ Nouvelle impulsion détectée
+15:55:01 [Bench] Impulsions : 13
+15:55:01 [Bench] | GPIO27 = 0
+15:55:01 [Bench] | GPIO2 = 1
+15:55:01 [Bench] Impulsions : 13\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:55:01 [Bench] Impulsions : 13
+15:55:02 [Bench] Impulsions : 13
+15:55:02 [Bench] | GPIO27 = 0
+15:55:02 [Bench] | GPIO2 = 1
+15:55:02 [Bench] | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:55:02 [Bench] Impulsions : 13
+15:55:02 [Bench] | GPIO27 = 1
+15:55:02 [Bench] | GPIO2 = 1
+15:55:02 [Bench] Impulsions : 13\u000d
+ | GPIO27 = 1\u000d
+ | GPIO2 = 1
+15:55:02 [CF carte] NEW COVER
+15:55:02 [CF carte] NEW COVER POS => 27
+15:55:02 [CF carte] POS => 27
+15:55:02 [Bench] Impulsions :
+15:55:02 [CF carte] NEW COVER POS => 28
+15:55:02 [CF carte] NEW COVER POS => 28
+15:55:02 [Bench] Impulsions : 13
+15:55:02 [Bench] | GPIO27 = 1
+15:55:02 [Bench] | GPIO2 = 1
+15:55:02 [Bench] 13\u000d
+ | GPIO27 = 1\u000d
+ | GPIO2 = 1
+15:55:02 [Bench] Impulsions : 14
+15:55:02 [Bench] | GPIO27 = 0
+15:55:02 [Bench] | GPIO2 = 1
+15:55:02 [Bench] Nouvelle impulsion détectée
+15:55:02 [Bench] Impulsions : 14\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1\u000d
+ Nouvelle impulsion détectée
+15:55:02 [Bench] Impulsions : 14
+15:55:02 [Bench] | GPIO27 = 0
+15:55:02 [Bench] | GPIO2 = 1
+15:55:02 [Bench] Impulsions : 14\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:55:03 [Bench] Impulsions : 14
+15:55:03 [Bench] | GPIO27 = 0
+15:55:03 [Bench] | GPIO2 = 1
+15:55:03 [Bench] Impulsions : 14\u000d
+ | GPIO27 = 0\u000d
+ | GPIO2 = 1
+15:55:03 [CF carte] NEW COVER POS => 29
+15:55:03 [CF carte] NEW COVER POS => 29
+15:55:03 [Bench] Impulsions : 14
+15:55:03 [Bench] | GPIO27 = 1
+15:55:03 [Bench] | GPIO2 = 1
+15:55:03 [Bench] Impulsions : 14\u000d
+ | GPIO27 = 1\u000d
+ | GPIO2 = 1
+15:55:03 [CF carte] NEW COVER POS => 30
+15:55:03 [CF carte] NEW COVER POS => 30
+15:55:03 [Bench] 🔂 Impulsions : 15
+15:55:03 [Bench] 🔂 Impulsions : 15\u000d
+Etape13  15 impulsions atteinte
+15:55:03 [Bench] Etape13  15 impulsions atteintes, fin de course fermée programmée.
+15:55:03 [Bench] s, fin de course fermée programmée.
+15:55:03 [CF carte] SET REFERENCE OK !!
+15:55:03 [CF carte] NEW COVER POS => 31
+15:55:03 [CF carte] SET REFERENCE OK !!\u000d
+NEW COVER POS => 31
+15:55:03 [CF carte] _CoverLength : 31
+15:55:03 [CF carte] _CoverLength : 31\u000d
+_CoverPos
+15:55:04 [CF carte] _CoverPosNow : 31
+15:55:04 [CF carte] anciendefPas de defaut
+15:55:04 [CF carte] def actPas de defaut
+15:55:04 [CF carte] *** ELSE LOOP _CoverPosNow : 31
+15:55:04 [CF carte] *** ELSE LOOP _CoverLength : 31
+15:55:04 [CF carte] *** ELSE LOOP TypePool = 0
+15:55:04 [CF carte] Now : 31\u000d
+anciendefPas de defaut\u000d
+def actPas de defaut\u000d
+*** ELSE LOOP _CoverPosNow : 31\u000d
+*** ELSE LOOP _CoverLength : 31\u000d
+*** ELSE LOOP TypePool = 0
+15:55:05 [Bench] Etape14  Merci de mettre l’interrupteur d
+15:55:05 [Bench] Etape14  Merci de mettre l’interrupteur de PROGRAMMATION sur OFF pour sauvegarder les fins de course.
+15:55:05 [Bench] Etape14  Appuyer sur START lorsque c’est fait.
+15:55:05 [Bench] e PROGRAMMATION sur OFF pour sauvegarder les fins de course.\u000d
+Etape14  Appuyer sur START lorsque c’est fait.
+15:55:19 [Bench] Etape14  Sauvegarde fins de course confirmée
+15:55:19 [Bench] Etape14  Sauvegarde fins de course confirmée par START.
+15:55:19 [Bench] par START.
+15:55:21 [Bench] Etape14 : Vérification des fins d
+15:55:21 [Bench] Etape14 : Vérification des fins de course programmées et contact Sel.
+15:55:21 [Bench] Ouverture du volet pour compter les impulsions...
+15:55:21 [Bench] Impulsions ouverture : 0
+15:55:21 [Bench] e course programmées et contact Sel.\u000d
+  Ouverture du volet pour compter les impulsions...\u000d
+ Impulsions ouverture : 0
+15:55:21 [CF carte] ADC POWER_REFF : 1186
+15:55:21 [CF carte] POWER_REFF : 1216
+15:55:21 [CF carte] ADC POWER_REFF : 1186\u000d
+POWER_REFF : 1216\u000d
+_CoverPosNow
+15:55:21 [CF carte] _CoverPosNow => 31
+15:55:21 [CF carte] OPENING COVER !!
+15:55:21 [CF carte] => 31\u000d
+OPENING COVER !!
+15:55:22 [Bench] Impulsions ouverture : 0
+15:55:22 [Bench] Impulsions ouverture : 0
+15:55:22 [Bench] Impulsions ouverture : 0
+15:55:22 [Bench] Impulsions ouverture : 0
+15:55:22 [Bench] Impulsions ouverture : 0
+15:55:22 [Bench] Impulsions ouverture : 0
+15:55:22 [CF carte] _CoverPosNow => 30
+15:55:22 [CF carte] _CoverPosNow => 30
+15:55:22 [Bench] Impulsions ouverture : 1
+15:55:22 [Bench] Impulsions ouverture : 1
+15:55:22 [Bench] Impulsions ouverture : 1
+15:55:22 [Bench] Impulsions ouverture : 1
+15:55:23 [Bench] Impulsions ouverture : 1
+15:55:23 [Bench] Impulsions ouverture : 1
+15:55:23 [CF carte] _CoverPosNow => 29
+15:55:23 [CF carte] _CoverPosNow => 29
+15:55:23 [Bench] Impulsions ouverture : 1
+15:55:23 [Bench] Impulsions ouverture : 1
+15:55:23 [CF carte] New_READ_CURRENT2>>>> 157
+15:55:23 [CF carte] New_READ_CURRENT2>>>> 157
+15:55:23 [CF carte] _CoverPosNow => 28
+15:55:23 [CF carte] _CoverPosNow => 28
+15:55:23 [Bench] Impulsions ouverture : 2
+15:55:23 [Bench] Impulsions ouverture : 2
+15:55:23 [Bench] Impulsions ouverture : 2
+15:55:23 [Bench] Impulsions ouverture : 2
+15:55:23 [CF carte] New_READ_CURRENT2>>>> 157
+15:55:23 [CF carte] New_READ_CURRENT2>>>> 157
+15:55:23 [Bench] Impulsions ouverture : 2
+15:55:23 [Bench] Impulsions ouverture : 2
+15:55:24 [CF carte] _CoverPosNow => 27
+15:55:24 [CF carte] New_READ_CURRENT2>>>> 156
+15:55:24 [CF carte] _CoverPosNow => 27\u000d
+New_READ_CURRENT2>>>> 156
+15:55:24 [Bench] Impulsions ouverture : 2
+15:55:24 [Bench] Impulsions ouverture : 2
+15:55:24 [CF carte] _Co
+15:55:24 [CF carte] _CoverPosNow => 26
+15:55:24 [CF carte] verPosNow => 26
+15:55:24 [Bench] Impulsions ouverture : 3
+15:55:24 [Bench] Impulsions ouverture : 3
+15:55:24 [CF carte] New_READ_CURRENT2>>>> 157
+15:55:24 [CF carte] New_READ_CURRENT2>>>> 157
+15:55:24 [Bench] Impulsions ouverture : 3
+15:55:24 [Bench] Impulsions ouverture : 3
+15:55:24 [CF carte] New_READ_CURRENT2>>>> 157
+15:55:24 [CF carte] New_READ_CURRENT2>>>> 157
+15:55:24 [Bench] Impulsions ouverture : 3
+15:55:24 [Bench] Impulsions ouverture : 3
+15:55:24 [Bench] Impulsions ouverture : 3
+15:55:24 [Bench] Impulsions ouverture : 3
+15:55:24 [CF carte] _CoverPosNow => 25
+15:55:24 [CF carte] _CoverPosNow => 25
+15:55:24 [CF carte] New_READ_CURRENT2>>>> 157
+15:55:24 [CF carte] New_READ_CURRENT2>>>> 157
+15:55:25 [CF carte] _CoverPosNow => 24
+15:55:25 [CF carte] _CoverPosNow => 24
+15:55:25 [Bench] Impulsions ouverture : 4
+15:55:25 [Bench] Impulsions ouverture : 4
+15:55:25 [Bench] Impulsions ouverture : 4
+15:55:25 [Bench] Impulsions ouverture : 4
+15:55:25 [Bench] Impulsions ouverture : 4
+15:55:25 [Bench] Impulsions ouverture : 4
+15:55:25 [Bench] Impulsions ouverture : 4
+15:55:25 [Bench] Impulsions ouverture : 4
+15:55:25 [CF carte] _CoverPosNow => 23
+15:55:25 [CF carte] _CoverPosNow => 23
+15:55:25 [CF carte] _CoverPosNow => 22
+15:55:25 [CF carte] _CoverPosNow => 22
+15:55:25 [Bench] Impulsions ouverture : 5
+15:55:25 [Bench] Impulsions ouverture : 5
+15:55:26 [Bench] Impulsions ouverture : 5
+15:55:26 [Bench] Impulsions ouverture : 5
+15:55:26 [Bench] Impulsions ouverture : 5
+15:55:26 [Bench] Impulsions ouverture : 5
+15:55:26 [Bench] Impulsions ouverture : 5
+15:55:26 [Bench] Impulsions ouverture : 5
+15:55:26 [CF carte] _CoverPosNow => 21
+15:55:26 [CF carte] _CoverPosNow => 21
+15:55:26 [Bench] Impulsions ouverture : 6
+15:55:26 [Bench] Impulsions ouverture : 6
+15:55:26 [CF carte] _CoverPosNow => 20
+15:55:26 [CF carte] _CoverPosNow => 20
+15:55:26 [Bench] Impulsions ouverture : 6
+15:55:26 [Bench] Impulsions ouverture : 6
+15:55:27 [Bench] Impulsions ouverture : 6
+15:55:27 [Bench] Impulsions ouverture : 6
+15:55:27 [Bench] Impulsions ouverture : 6
+15:55:27 [Bench] Impulsions ouverture : 6
+15:55:27 [CF carte] _CoverPosNow => 19
+15:55:27 [CF carte] _CoverPosNow => 19
+15:55:27 [Bench] Impulsions ouverture : 7
+15:55:27 [Bench] Impulsions ouverture : 7
+15:55:27 [CF carte] _CoverPosNow => 18
+15:55:27 [CF carte] _CoverPosNow => 18
+15:55:27 [Bench] Impulsions ouverture : 7
+15:55:27 [Bench] Impulsions ouverture : 7
+15:55:27 [Bench] Impulsions ouverture : 7
+15:55:27 [Bench] Impulsions ouverture : 7
+15:55:28 [Bench] Impulsions ouverture : 7
+15:55:28 [Bench] Impulsions ouverture : 7
+15:55:28 [CF carte] _CoverPosNow => 17
+15:55:28 [CF carte] _CoverPosNow => 17
+15:55:28 [Bench] Impulsions ouverture : 7
+15:55:28 [Bench] Impulsions ouverture : 7
+15:55:28 [CF carte] _CoverPosNow => 16
+15:55:28 [CF carte] _CoverPosNow => 16
+15:55:28 [Bench] Impulsions ouverture : 8
+15:55:28 [Bench] Impulsions ouverture : 8
+15:55:28 [Bench] Impulsions ouverture : 8
+15:55:28 [Bench] Impulsions ouverture : 8
+15:55:28 [Bench] Impulsions ouverture : 8
+15:55:28 [Bench] Impulsions ouverture : 8
+15:55:28 [CF carte] _CoverPosNow => 15
+15:55:28 [CF carte] _CoverPosNow => 15
+15:55:29 [Bench] Impulsions ouverture : 8
+15:55:29 [Bench] Impulsions ouverture : 8
+15:55:29 [CF carte] _CoverPosNow => 14
+15:55:29 [CF carte] _CoverPosNow => 14
+15:55:29 [Bench] Impulsions ouverture : 9
+15:55:29 [Bench] Impulsions ouverture : 9
+15:55:29 [Bench] Impulsions ouverture : 9
+15:55:29 [Bench] Impulsions ouverture : 9
+15:55:29 [Bench] Impulsions ouverture : 9
+15:55:29 [Bench] Impulsions ouverture : 9
+15:55:29 [CF carte] _CoverPosNow => 13
+15:55:29 [CF carte] _CoverPosNow => 13
+15:55:29 [Bench] Impulsions ouverture : 9
+15:55:29 [Bench] Impulsions ouverture : 9
+15:55:29 [CF carte] _CoverPosNow => 12
+15:55:29 [CF carte] _CoverPosNow => 12
+15:55:30 [Bench] Impulsions ouverture : 1
+15:55:30 [Bench] Impulsions ouverture : 10
+15:55:30 [Bench] 0
+15:55:30 [Bench] Impulsions ouverture : 10
+15:55:30 [Bench] Impulsions ouverture : 10
+15:55:30 [Bench] Impulsions ouverture :
+15:55:30 [Bench] Impulsions ouverture : 10
+15:55:30 [Bench] 10
+15:55:30 [CF carte] _CoverPosNow => 11
+15:55:30 [CF carte] _CoverPosNow => 11
+15:55:30 [Bench] Impulsions ouverture : 10
+15:55:30 [Bench] Impulsions ouverture : 10
+15:55:30 [CF carte] _CoverPosNow => 10
+15:55:30 [CF carte] _CoverPosNow => 10
+15:55:30 [Bench] Impulsions ouverture
+15:55:30 [Bench] Impulsions ouverture : 11
+15:55:30 [Bench] : 11
+15:55:31 [Bench] Impulsions ouverture : 11
+15:55:31 [Bench] Impulsions ouverture : 11
+15:55:31 [Bench] Impulsions ouvertu
+15:55:31 [Bench] Impulsions ouverture : 11
+15:55:31 [Bench] re : 11
+15:55:31 [CF carte] _CoverPosNow => 9
+15:55:31 [CF carte] _CoverPosNow => 9
+15:55:31 [Bench] Impulsions ouverture : 11
+15:55:31 [Bench] Impulsions ouverture : 11
+15:55:31 [CF carte] _CoverPosNow => 8
+15:55:31 [CF carte] _CoverPosNow => 8
+15:55:31 [Bench] Impulsions ouve
+15:55:31 [Bench] Impulsions ouverture : 12
+15:55:31 [Bench] rture : 12
+15:55:31 [Bench] Impulsions ouverture : 12
+15:55:31 [Bench] Impulsions ouverture : 12
+15:55:32 [Bench] Impulsions ou
+15:55:32 [Bench] Impulsions ouverture : 12
+15:55:32 [Bench] verture : 12
+15:55:32 [CF carte] _CoverPosNow => 7
+15:55:32 [CF carte] _CoverPosNow => 7
+15:55:32 [Bench] Impulsions ouverture : 12
+15:55:32 [Bench] Impulsions ouverture : 12
+15:55:32 [CF carte] _CoverPosNow => 6
+15:55:32 [CF carte] _CoverPosNow => 6
+15:55:32 [Bench] Impulsions
+15:55:32 [Bench] Impulsions ouverture : 13
+15:55:32 [Bench] ouverture : 13
+15:55:32 [Bench] Impulsions ouverture : 13
+15:55:32 [Bench] Impulsions ouverture : 13
+15:55:32 [Bench] Impulsio
+15:55:32 [Bench] Impulsions ouverture : 13
+15:55:32 [Bench] ns ouverture : 13
+15:55:33 [CF carte] _CoverPosNow => 5
+15:55:33 [CF carte] _CoverPosNow => 5
+15:55:33 [Bench] Impulsions ouverture : 13
+15:55:33 [Bench] Impulsions ouverture : 13
+15:55:33 [CF carte] _CoverPosNow => 4
+15:55:33 [CF carte] _CoverPosNow => 4
+15:55:33 [Bench] Impuls
+15:55:33 [Bench] Impulsions ouverture : 14
+15:55:33 [Bench] ions ouverture : 14
+15:55:33 [Bench] Impulsions ouverture : 14
+15:55:33 [Bench] Impulsions ouverture : 14
+15:55:33 [Bench] Impu
+15:55:33 [Bench] Impulsions ouverture : 14
+15:55:33 [Bench] lsions ouverture : 14
+15:55:33 [CF carte] _CoverPosNow => 3
+15:55:33 [CF carte] _CoverPosNow => 3
+15:55:33 [Bench] Impulsions ouverture : 14
+15:55:33 [Bench] Impulsions ouverture : 14
+15:55:34 [CF carte] _CoverPosNow => 2
+15:55:34 [CF carte] _CoverPosNow => 2
+15:55:34 [Bench] Im
+15:55:34 [CF carte] @@@@@@@@******
+15:55:34 [CF carte] @@@@@@@@******
+15:55:34 [Bench] Impulsions ouverture : 15
+15:55:34 [Bench] Etape15  Ouverture atteinte (15 impulsions).
+15:55:34 [Bench] pulsions ouverture : 15\u000d
+Etape15  Ouverture atteinte (15 impulsions).
+15:55:34 [CF carte] SET REF OK !!
+15:55:34 [CF carte] SET REF OK !!
+15:55:34 [CF carte] _CoverPosNow => 1
+15:55:34 [CF carte] _CoverLength : 31
+15:55:34 [CF carte] _CoverPosNow : 1
+15:55:34 [CF carte] _CoverPosNow => 1\u000d
+_CoverLength : 31\u000d
+_CoverPosNow : 1
+15:55:34 [CF carte] anciendefPas de defaut
+15:55:34 [CF carte] def actPas de defaut
+15:55:34 [CF carte] *** ELSE LOOP _CoverPosNow : 1
+15:55:34 [CF carte] *** ELSE LOOP _CoverLength : 31
+15:55:34 [CF carte] *** ELSE LOOP TypePool = 0
+15:55:34 [CF carte] anciendefPas de defaut\u000d
+def actPas de defaut\u000d
+*** ELSE LOOP _CoverPosNow : 1\u000d
+*** ELSE LOOP _CoverLength : 31\u000d
+*** ELSE LOOP TypePool = 0
+15:55:37 [Bench] Fermeture du volet pour compter les impulsions...
+15:55:37 [Bench] Impulsions fermeture : 0
+15:55:37 [Bench] Fermeture du volet pour compter les impulsions...\u000d
+ Impulsions fermeture : 0
+15:55:37 [CF carte] ADC POWER_REFF : 1172
+15:55:37 [CF carte] POWER_REFF : 1202
+15:55:37 [CF carte] _CoverPosNow => 1
+15:55:37 [CF carte] CLOSING COVER !!
+15:55:37 [CF carte] ADC POWER_REFF : 1172\u000d
+POWER_REFF : 1202\u000d
+_CoverPosNow => 1\u000d
+CLOSING COVER !!
+15:55:37 [Bench] Impulsions fermeture : 0
+15:55:37 [Bench] Impulsions fermeture : 0
+15:55:37 [CF carte] _CoverPosNow => 2
+15:55:37 [CF carte] _CoverPosNow => 2
+15:55:37 [Bench] Impulsions fermeture : 1
+15:55:37 [Bench] Impulsions fermeture : 1
+15:55:37 [Bench] Impulsions fermeture : 1
+15:55:37 [Bench] Impulsions fermeture : 1
+15:55:37 [Bench] Impulsions fermeture : 1
+15:55:37 [Bench] Impulsions fermeture : 1
+15:55:38 [Bench] Impulsions fermeture : 1
+15:55:38 [Bench] Impulsions fermeture : 1
+15:55:38 [CF carte] _CoverPosN
+15:55:38 [CF carte] _CoverPosNow => 3
+15:55:38 [CF carte] ow => 3
+15:55:38 [Bench] Impulsions fermeture : 2
+15:55:38 [Bench] Impulsions fermeture : 2
+15:55:38 [CF carte] _CoverPosNow => 4
+15:55:38 [CF carte] _CoverPosNow => 4
+15:55:38 [Bench] Impulsions fermeture : 2
+15:55:38 [Bench] Impulsions fermeture : 2
+15:55:38 [Bench] Impulsions fermeture : 2
+15:55:38 [Bench] Impulsions fermeture : 2
+15:55:38 [Bench] Impulsions fermeture : 2
+15:55:38 [Bench] Impulsions fermeture : 2
+15:55:38 [CF carte] _CoverPosNow => 5
+15:55:38 [CF carte] _CoverPosNow => 5
+15:55:39 [Bench] Impulsions fermeture : 2
+15:55:39 [Bench] Impulsions fermeture : 2
+15:55:39 [CF carte] _CoverPosNow => 6
+15:55:39 [CF carte] _CoverPosNow => 6
+15:55:39 [Bench] Impulsions fermeture : 3
+15:55:39 [Bench] Impulsions fermeture : 3
+15:55:39 [Bench] Impulsions fermeture : 3
+15:55:39 [Bench] Impulsions fermeture : 3
+15:55:39 [Bench] Impulsions fermeture : 3
+15:55:39 [Bench] Impulsions fermeture : 3
+15:55:39 [CF carte] _CoverPosNow => 7
+15:55:39 [CF carte] _CoverPosNow => 7
+15:55:39 [Bench] Impulsions fermeture : 3
+15:55:39 [Bench] Impulsions fermeture : 3
+15:55:39 [CF carte] _CoverPosNow => 8
+15:55:39 [CF carte] _CoverPosNow => 8
+15:55:40 [Bench] Impulsions fermeture : 4
+15:55:40 [Bench] Impulsions fermeture : 4
+15:55:40 [Bench] Impulsions fermeture : 4
+15:55:40 [Bench] Impulsions fermeture : 4
+15:55:40 [Bench] Impulsions fermeture : 4
+15:55:40 [Bench] Impulsions fermeture : 4
+15:55:40 [CF carte] _CoverPosNow => 9
+15:55:40 [CF carte] _CoverPosNow => 9
+15:55:40 [Bench] Impulsions fermeture : 4
+15:55:40 [Bench] Impulsions fermeture : 4
+15:55:40 [CF carte] _CoverPosNow => 10
+15:55:40 [CF carte] _CoverPosNow => 10
+15:55:40 [Bench] Impulsions fermeture : 5
+15:55:40 [Bench] Impulsions fermeture : 5
+15:55:41 [Bench] Impulsions fermeture : 5
+15:55:41 [Bench] Impulsions fermeture : 5
+15:55:41 [Bench] Impulsions fermeture : 5
+15:55:41 [Bench] Impulsions fermeture : 5
+15:55:41 [CF carte] _CoverPosNow => 11
+15:55:41 [CF carte] _CoverPosNow => 11
+15:55:41 [Bench] Impulsions fermeture : 5
+15:55:41 [Bench] Impulsions fermeture : 5
+15:55:41 [CF carte] _CoverPosNow => 12
+15:55:41 [CF carte] _CoverPosNow => 12
+15:55:41 [Bench] Impulsions fermeture : 6
+15:55:41 [Bench] Impulsions fermeture : 6
+15:55:41 [Bench] Impulsions fermeture : 6
+15:55:41 [Bench] Impulsions fermeture : 6
+15:55:42 [Bench] Impulsions fermeture : 6
+15:55:42 [Bench] Impulsions fermeture : 6
+15:55:42 [Bench] Impulsions fermeture : 6
+15:55:42 [Bench] Impulsions fermeture : 6
+15:55:42 [CF carte] _CoverPosNow => 13
+15:55:42 [CF carte] _CoverPosNow => 13
+15:55:42 [CF carte] _CoverPosNow => 14
+15:55:42 [CF carte] _CoverPosNow => 14
+15:55:42 [Bench] Impulsions fermeture : 7
+15:55:42 [Bench] Impulsions fermeture : 7
+15:55:42 [Bench] Impulsions fermeture : 7
+15:55:42 [Bench] Impulsions fermeture : 7
+15:55:42 [Bench] Impulsions fermeture : 7
+15:55:42 [Bench] Impulsions fermeture : 7
+15:55:43 [Bench] Impulsions fermeture : 7
+15:55:43 [Bench] Impulsions fermeture : 7
+15:55:43 [CF carte] _CoverPos
+15:55:43 [CF carte] _CoverPosNow => 15
+15:55:43 [CF carte] Now => 15
+15:55:43 [CF carte] _CoverPosNow => 16
+15:55:43 [CF carte] _CoverPosNow => 16
+15:55:43 [Bench] Impulsions fermeture : 8
+15:55:43 [Bench] Impulsions fermeture : 8
+15:55:43 [Bench] Impulsions fermeture
+15:55:43 [Bench] Impulsions fermeture : 8
+15:55:43 [Bench] : 8
+15:55:43 [Bench] Impulsions fermeture : 8
+15:55:43 [Bench] Impulsions fermeture : 8
+15:55:43 [Bench] Impulsions fermetur
+15:55:43 [Bench] Impulsions fermeture : 8
+15:55:43 [Bench] e : 8
+15:55:43 [CF carte] _CoverPosNow => 17
+15:55:43 [CF carte] _CoverPosNow => 17
+15:55:44 [Bench] Impulsions fermeture : 8
+15:55:44 [Bench] Impulsions fermeture : 8
+15:55:44 [CF carte] _CoverPosNow => 18
+15:55:44 [CF carte] _CoverPosNow => 18
+15:55:44 [Bench] Impulsions fermet
+15:55:44 [Bench] Impulsions fermeture : 9
+15:55:44 [Bench] ure : 9
+15:55:44 [Bench] Impulsions fermeture : 9
+15:55:44 [Bench] Impulsions fermeture : 9
+15:55:44 [Bench] Impulsions fer
+15:55:44 [Bench] Impulsions fermeture : 9
+15:55:44 [Bench] meture : 9
+15:55:44 [CF carte] _CoverPosNow => 19
+15:55:44 [CF carte] _CoverPosNow => 19
+15:55:44 [Bench] Impulsions fermeture : 9
+15:55:44 [Bench] Impulsions fermeture : 9
+15:55:44 [CF carte] _CoverPosNow => 20
+15:55:44 [CF carte] _CoverPosNow => 20
+15:55:45 [Bench] Impulsions f
+15:55:45 [Bench] Impulsions fermeture : 10
+15:55:45 [Bench] ermeture : 10
+15:55:45 [Bench] Impulsions fermeture : 10
+15:55:45 [Bench] Impulsions fermeture : 10
+15:55:45 [Bench] Impulsions
+15:55:45 [Bench] Impulsions fermeture : 10
+15:55:45 [Bench] fermeture : 10
+15:55:45 [CF carte] _CoverPosNow => 21
+15:55:45 [CF carte] _CoverPosNow => 21
+15:55:45 [Bench] Impulsions fermeture : 10
+15:55:45 [Bench] Impulsions fermeture : 10
+15:55:45 [CF carte] _CoverPosNow => 22
+15:55:45 [CF carte] _CoverPosNow => 22
+15:55:45 [Bench] Impulsio
+15:55:45 [Bench] Impulsions fermeture : 11
+15:55:45 [Bench] ns fermeture : 11
+15:55:46 [Bench] Impulsions fermeture : 11
+15:55:46 [Bench] Impulsions fermeture : 11
+15:55:46 [Bench] Impuls
+15:55:46 [Bench] Impulsions fermeture : 11
+15:55:46 [Bench] ions fermeture : 11
+15:55:46 [CF carte] _CoverPosNow => 23
+15:55:46 [CF carte] _CoverPosNow => 23
+15:55:46 [Bench] Impulsions fermeture : 11
+15:55:46 [Bench] Impulsions fermeture : 11
+15:55:46 [CF carte] _CoverPosNow => 24
+15:55:46 [CF carte] _CoverPosNow => 24
+15:55:46 [Bench] Imp
+15:55:46 [Bench] Impulsions fermeture : 12
+15:55:46 [Bench] etat pres sel 0
+15:55:46 [Bench] ulsions fermeture : 12\u000d
+etat pres sel 0
+15:55:46 [Bench] Impulsions fermeture : 12
+15:55:46 [Bench] etat pres sel 0
+15:55:46 [Bench] Impulsions fermeture : 12\u000d
+etat pres sel 0
+15:55:47 [Bench] I
+15:55:47 [Bench] Impulsions fermeture : 12
+15:55:47 [Bench] etat pres sel 0
+15:55:47 [Bench] mpulsions fermeture : 12\u000d
+etat pres sel 0
+15:55:47 [CF carte] _CoverPosNow => 25
+15:55:47 [CF carte] _CoverPosNow => 25
+15:55:47 [Bench] Impulsions fermeture : 12
+15:55:47 [Bench] etat pres sel 1
+15:55:47 [Bench] Impulsions fermeture : 12\u000d
+etat pres sel 1
+15:55:47 [CF carte] _CoverPosNow => 26
+15:55:47 [CF carte] _CoverPosNow => 26
+15:55:47 [Bench] Impulsions fermeture : 13
+15:55:47 [Bench] Impulsions fermeture : 13
+15:55:47 [Bench] Impulsions fermeture : 13
+15:55:47 [Bench] Impulsions fermeture : 13
+15:55:47 [Bench] Impulsions fermeture : 13
+15:55:47 [Bench] Impulsions fermeture : 13
+15:55:48 [Bench] Impulsions fermeture : 13
+15:55:48 [Bench] Impulsions fermeture : 13
+15:55:48 [CF carte] _CoverPosNow => 27
+15:55:48 [CF carte] _CoverPosNow => 27
+15:55:48 [CF carte] _Cove
+15:55:48 [CF carte] _CoverPosNow => 28
+15:55:48 [CF carte] rPosNow => 28
+15:55:48 [Bench] Impulsions fermeture : 14
+15:55:48 [Bench] etat  nv sel 1
+15:55:48 [Bench] Etape17 Contact Sel fonctionne correctement
+15:55:48 [Bench] Impulsions fermeture : 14\u000d
+etat  nv sel 1\u000d
+Etape17 Contact Sel fonctionne correctement
+15:55:48 [Bench] Impulsions fermeture : 14
+15:55:48 [Bench] etat  nv sel 1
+15:55:48 [Bench] Etape17 Contact Sel fonctionne correctement
+15:55:48 [Bench] Impulsions fermeture : 14\u000d
+etat  nv sel 1\u000d
+Etape17 Contact Sel fonctionne correctement
+15:55:48 [Bench] Impulsions fermeture : 14
+15:55:48 [Bench] etat  nv sel 1
+15:55:48 [Bench] Etape17 Contact Sel fonctionne correctement
+15:55:48 [Bench] Impulsions fermeture : 14\u000d
+etat  nv sel 1\u000d
+Etape17 Contact Sel fonctionne correctement
+15:55:48 [Bench] Impulsions fermeture : 14
+15:55:48 [Bench] etat  nv sel 1
+15:55:48 [Bench] Etape17 Contact Sel fonctionne correctement
+15:55:48 [Bench] Impulsions fermeture : 14\u000d
+etat  nv sel 1\u000d
+Etape17 Contact Sel fonctionne correctement
+15:55:48 [CF carte] _CoverPosNow => 29
+15:55:48 [CF carte] _CoverPosNow => 29
+15:55:49 [Bench] Impulsions fermeture : 15
+15:55:49 [Bench] Etape16  Fermeture atteinte (15 impulsions).
+15:55:49 [Bench] Impulsions fermeture : 15\u000d
+Etape16  Fermeture atteinte (15 impulsions).
+15:55:49 [CF carte] _Co
+15:55:49 [CF carte] _CoverPosNow => 30
+15:55:49 [CF carte] verPosNow => 30
+15:55:49 [CF carte] SET REF OK !!
+15:55:49 [CF carte] SET REF OK !!
+15:55:49 [CF carte] _CoverPosNow => 31
+15:55:49 [CF carte] _CoverLength : 31
+15:55:49 [CF carte] _CoverPosNow : 31
+15:55:49 [CF carte] _CoverPosNow => 31\u000d
+_CoverLength : 31\u000d
+_CoverPosNow : 31
+15:55:49 [CF carte] anciendefPas de defaut
+15:55:49 [CF carte] def actPas de defaut
+15:55:49 [CF carte] *** ELSE LOOP _CoverPosNow : 31
+15:55:49 [CF carte] *** ELSE LOOP _CoverLength : 31
+15:55:49 [CF carte] *** ELSE LOOP TypePool = 0
+15:55:49 [CF carte] anciendefPas de defaut\u000d
+def actPas de defaut\u000d
+*** ELSE LOOP _CoverPosNow : 31\u000d
+*** ELSE LOOP _CoverLength : 31\u000d
+*** ELSE LOOP TypePool = 0
+15:55:51 [Bench] Étape 15 : Test du défaut capteur.
+15:55:51 [Bench] Étape 15 : Test du défaut capteur.\u000d
+ Ouverture
+15:55:51 [Bench] Ouverture du volet pour simuler un défaut capteur...
+15:55:51 [Bench] Impulsions ouverture : 0
+15:55:51 [Bench] du volet pour simuler un défaut capteur...\u000d
+ Impulsions ouverture : 0
+15:55:51 [CF carte] ADC POWER_REFF : 1170
+15:55:51 [CF carte] POWER_REFF : 1200
+15:55:51 [CF carte] _CoverPosNow => 31
+15:55:51 [CF carte] OPENING COVER !!
+15:55:51 [CF carte] ADC POWER_REFF : 1170\u000d
+POWER_REFF : 1200\u000d
+_CoverPosNow => 31\u000d
+OPENING COVER !!
+15:55:51 [Bench] Impulsions o
+15:55:51 [Bench] Impulsions ouverture : 0
+15:55:51 [Bench] uverture : 0
+15:55:51 [Bench] Impulsions ouverture : 0
+15:55:51 [Bench] Impulsions ouverture : 0
+15:55:51 [Bench] Impulsions
+15:55:51 [Bench] Impulsions ouverture : 0
+15:55:51 [Bench] ouverture : 0
+15:55:51 [CF carte] _CoverPosNow => 30
+15:55:51 [CF carte] _CoverPosNow => 30
+15:55:51 [Bench] Impulsions ouverture : 1
+15:55:51 [Bench] Impulsions ouverture : 1
+15:55:52 [Bench] Impulsio
+15:55:52 [Bench] Impulsions ouverture : 1
+15:55:52 [Bench] ns ouverture : 1
+15:55:52 [Bench] Impulsions ouverture : 1
+15:55:52 [Bench] Impulsions ouverture : 1
+15:55:52 [Bench] Impuls
+15:55:52 [Bench] Impulsions ouverture : 1
+15:55:52 [Bench] ions ouverture : 1
+15:55:52 [CF carte] _CoverPosNow => 29
+15:55:52 [CF carte] _CoverPosNow => 29
+15:55:52 [Bench] Impulsions ouverture : 2
+15:55:52 [Bench] Impulsions ouverture : 2
+15:55:52 [CF carte] New_READ_CURRENT2>>>> 157
+15:55:52 [CF carte] New_READ_CURRENT2>>>> 157
+15:55:52 [CF carte] _CoverPosNow => 28
+15:55:52 [CF carte] _CoverPosNow => 28
+15:55:52 [Bench] Impu
+15:55:52 [Bench] Impulsions ouverture : 2
+15:55:52 [Bench] lsions ouverture : 2
+15:55:52 [CF carte] New_READ_CURRENT2>>>> 15
+15:55:53 [CF carte] New_READ_CURRENT2>>>> 156
+15:55:53 [CF carte] 6
+15:55:53 [Bench] Impulsions ouverture : 2
+15:55:53 [Bench] Impulsions ouverture : 2
+15:55:53 [Bench] I
+15:55:53 [Bench] Impulsions ouverture : 2
+15:55:53 [Bench] mpulsions ouverture : 2
+15:55:53 [CF carte] _CoverPosNow => 27
+15:55:53 [CF carte] New_READ_CURRENT2>>>> 156
+15:55:53 [CF carte] _CoverPosNow => 27\u000d
+New_READ_CURRENT2>>>> 156
+15:55:53 [Bench] Impulsions ouverture : 2
+15:55:53 [Bench] Impulsions ouverture : 2
+15:55:53 [CF carte] _CoverPosNow => 26
+15:55:53 [CF carte] _CoverPosNow => 26
+15:55:53 [CF carte] New_READ_CURRENT2>>>> 157
+15:55:53 [CF carte] New_READ_CURRENT2>>>> 157
+15:55:53 [Bench] Impulsions ouverture : 3
+15:55:53 [Bench] Impulsions ouverture : 3
+15:55:53 [Bench] Impulsions ouverture : 3
+15:55:53 [Bench] Impulsions ouverture : 3
+15:55:53 [CF carte] New_READ_CURRENT2>>>> 157
+15:55:53 [CF carte] New_READ_CURRENT2>>>> 157
+15:55:54 [Bench] Impulsions ouverture : 3
+15:55:54 [Bench] Impulsions ouverture : 3
+15:55:54 [CF carte] _CoverPosNow => 25
+15:55:54 [CF carte] _CoverPosNow => 25
+15:55:54 [CF carte] New_READ_CURRENT2>>>> 157
+15:55:54 [CF carte] New_READ_CURRENT2>>>> 157
+15:55:54 [Bench] Impulsions ouverture : 3
+15:55:54 [Bench] Impulsions ouverture : 3
+15:55:54 [CF carte] _CoverPosNow
+15:55:54 [CF carte] _CoverPosNow => 24
+15:55:54 [CF carte] => 24
+15:55:54 [Bench] Impulsions ouverture : 4
+15:55:54 [Bench] Impulsions ouverture : 4
+15:55:54 [Bench] Impulsions ouverture : 4
+15:55:54 [Bench] Impulsions ouverture : 4
+15:55:54 [Bench] Impulsions ouverture : 4
+15:55:54 [Bench] Impulsions ouverture : 4
+15:55:54 [CF carte] _CoverPosNow => 23
+15:55:54 [CF carte] _CoverPosNow => 23
+15:55:55 [Bench] Impulsions ouverture : 4
+15:55:55 [Bench] Impulsions ouverture : 4
+15:55:55 [CF carte] _CoverPosNow => 22
+15:55:55 [CF carte] _CoverPosNow => 22
+15:55:55 [Bench] Impulsions ouverture : 5
+15:55:55 [Bench] Impulsions ouverture : 5
+15:55:55 [Bench] Impulsions ouverture : 5
+15:55:55 [Bench] Impulsions ouverture : 5
+15:55:55 [Bench] Impulsions ouverture : 5
+15:55:55 [Bench] Impulsions ouverture : 5
+15:55:55 [CF carte] _CoverPosNow => 21
+15:55:55 [CF carte] _CoverPosNow => 21
+15:55:55 [Bench] Impulsions ouverture : 5
+15:55:55 [Bench] Impulsions ouverture : 5
+15:55:55 [CF carte] _CoverPosNow => 20
+15:55:55 [CF carte] _CoverPosNow => 20
+15:55:56 [Bench] Impulsions ouverture : 6
+15:55:56 [Bench] Impulsions ouverture : 6
+15:55:56 [Bench] Impulsions ouverture : 6
+15:55:56 [Bench] Impulsions ouverture : 6
+15:55:56 [Bench] Impulsions ouverture : 6
+15:55:56 [Bench] Impulsions ouverture : 6
+15:55:56 [CF carte] _CoverPosNow => 19
+15:55:56 [CF carte] _CoverPosNow => 19
+15:55:56 [Bench] Impulsions ouverture : 6
+15:55:56 [Bench] Impulsions ouverture : 6
+15:55:56 [CF carte] _CoverPosNow => 18
+15:55:56 [CF carte] _CoverPosNow => 18
+15:55:56 [Bench] Impulsions ouverture : 7
+15:55:56 [Bench] Impulsions ouverture : 7
+15:55:57 [Bench] Impulsions ouverture : 7
+15:55:57 [Bench] Impulsions ouverture : 7
+15:55:57 [Bench] Impulsions ouverture : 7
+15:55:57 [Bench] Impulsions ouverture : 7
+15:55:57 [CF carte] _CoverPosNow => 17
+15:55:57 [CF carte] _CoverPosNow => 17
+15:55:57 [Bench] Impulsions ouverture : 7
+15:55:57 [Bench] Impulsions ouverture : 7
+15:55:57 [CF carte] _CoverPosNow => 16
+15:55:57 [CF carte] _CoverPosNow => 16
+15:55:57 [Bench] Impulsions ouverture : 8
+15:55:57 [Bench] Etape18   Défaut capteur activé à l'impulsion 8.
+15:55:57 [Bench] Impulsions ouverture : 8\u000d
+Etape18   Défaut capteur activé à l'impulsion 8.
+15:55:58 [CF carte] _CoverPosNow => 15
+15:55:58 [CF carte] _CoverPosNow => 15
+15:55:58 [CF carte] _CoverPosNow => 14
+15:55:58 [CF carte] _CoverPosNow => 14
+15:55:59 [CF carte] _CoverPosNow => 13
+15:55:59 [CF carte] _CoverPosNow => 13
+15:55:59 [CF carte] _CoverPosNow => 12
+15:55:59 [CF carte] _CoverPosNow => 12
+15:55:59 [Bench] ⚠️⚠️⚠️⚠️⚠️ Simulation défa
+15:55:59 [Bench] ⚠️⚠️⚠️⚠️⚠️ Simulation défaut capteur⚠️⚠️⚠️⚠️⚠️
+15:55:59 [Bench] Etape19  Appuyer sur START pour quitter le panne
+15:55:59 [Bench] ut capteur⚠️⚠️⚠️⚠️⚠️ \u000d
+Etape19  Appuyer sur START pour quitter le panne
+15:55:59 [CF carte] @@@@@@@@******
+15:55:59 [CF carte] @@@@@@@@******
+15:55:59 [CF carte] SET REF OK !!
+15:55:59 [CF carte] _CoverPosNow => 11
+15:55:59 [CF carte] SET REF OK !!\u000d
+_CoverPosNow => 11\u000d
+_CoverLeng
+15:56:00 [CF carte] _CoverLength : 31
+15:56:00 [CF carte] _CoverPosNow : 11
+15:56:00 [CF carte] th : 31\u000d
+_CoverPosNow : 11
+15:56:00 [CF carte] anciendefPas de defaut
+15:56:00 [CF carte] def actPas de defaut
+15:56:00 [CF carte] *** ELSE LOOP _CoverPosNow : 11
+15:56:00 [CF carte] *** ELSE LOOP _CoverLength : 31
+15:56:00 [CF carte] *** ELSE LOOP TypePool = 0
+15:56:00 [CF carte] anciendefPas de defaut\u000d
+def actPas de defaut\u000d
+*** ELSE LOOP _CoverPosNow : 11\u000d
+*** ELSE LOOP _CoverLength : 31\u000d
+*** ELSE LOOP TypePool = 0
+15:56:11 [Bench] Etape19  Défaut capteur désactivé.
+15:56:11 [Bench] Etape19  Défaut capteur désactivé.\u000d
+Etape19  Reprise de l'
+15:56:11 [Bench] Etape19  Reprise de l'ouverture du volet...
+15:56:11 [Bench] ouverture du volet...
+15:56:11 [CF carte] ADC POWER_REFF : 1180
+15:56:11 [CF carte] POWER_REFF : 1210
+15:56:11 [CF carte] ADC POWER_REFF : 1180\u000d
+POWER_REFF : 1210\u000d
+_CoverPosNo
+15:56:11 [CF carte] _CoverPosNow => 11
+15:56:11 [CF carte] OPENING COVER !!
+15:56:11 [CF carte] w => 11\u000d
+OPENING COVER !!
+15:56:11 [Bench] Impulsions ouverture : 10
+15:56:11 [Bench] Impulsions ouverture : 10
+15:56:11 [Bench] Impulsions ouverture : 11
+15:56:11 [Bench] Impulsions ouverture : 11
+15:56:11 [CF carte] _CoverPosNow => 10
+15:56:11 [CF carte] _CoverPosNow => 10
+15:56:11 [Bench] Impulsions ouverture : 11
+15:56:11 [Bench] Impulsions ouverture : 11
+15:56:12 [Bench] Impulsions ouverture : 11
+15:56:12 [Bench] Impulsions ouverture : 11
+15:56:12 [Bench] Impulsions ouverture : 11
+15:56:12 [Bench] Impulsions ouverture : 11
+15:56:12 [Bench] Impulsions ouverture : 11
+15:56:12 [Bench] Impulsions ouverture : 11
+15:56:12 [CF carte] _CoverPosNow => 9
+15:56:12 [CF carte] _CoverPosNow => 9
+15:56:12 [Bench] Impulsions ouverture : 11
+15:56:12 [Bench] Impulsions ouverture : 11
+15:56:12 [CF carte] _CoverPosNow => 8
+15:56:12 [CF carte] _CoverPosNow => 8
+15:56:12 [Bench] Impulsions ouverture : 12
+15:56:12 [Bench] Impulsions ouverture : 12
+15:56:13 [Bench] Impulsions ouverture : 12
+15:56:13 [Bench] Impulsions ouverture : 12
+15:56:13 [Bench] Impulsions ouverture : 12
+15:56:13 [Bench] Impulsions ouverture : 12
+15:56:13 [CF carte] _CoverPosNow => 7
+15:56:13 [CF carte] _CoverPosNow => 7
+15:56:13 [Bench] Impulsions ouverture : 12
+15:56:13 [Bench] Impulsions ouverture : 12
+15:56:13 [CF carte] _CoverPosNow => 6
+15:56:13 [CF carte] _CoverPosNow => 6
+15:56:13 [Bench] Impulsions ouverture : 13
+15:56:13 [Bench] Impulsions ouverture : 13
+15:56:13 [Bench] Impulsions ouverture : 13
+15:56:13 [Bench] Impulsions ouverture : 13
+15:56:14 [Bench] Impulsions ouverture : 13
+15:56:14 [Bench] Impulsions ouverture : 13
+15:56:14 [CF carte] _CoverPosNow => 5
+15:56:14 [CF carte] _CoverPosNow => 5
+15:56:14 [Bench] Impulsions ouverture : 13
+15:56:14 [Bench] Impulsions ouverture : 13
+15:56:14 [CF carte] _CoverPosNow => 4
+15:56:14 [CF carte] _CoverPosNow => 4
+15:56:14 [Bench] Impulsions ouverture : 14
+15:56:14 [Bench] Impulsions ouverture : 14
+15:56:14 [Bench] Impulsions ouverture : 14
+15:56:14 [Bench] Impulsions ouverture : 14
+15:56:14 [Bench] Impulsions ouverture : 14
+15:56:14 [Bench] Impulsions ouverture : 14
+15:56:15 [CF carte] _CoverPosNow => 3
+15:56:15 [CF carte] _CoverPosNow => 3
+15:56:15 [Bench] Impulsions ouverture : 14
+15:56:15 [Bench] Impulsions ouverture : 14
+15:56:15 [CF carte] _CoverPosNow => 2
+15:56:15 [CF carte] _CoverPosNow => 2
+15:56:15 [Bench] Impulsions ouverture : 15
+15:56:15 [Bench] Impulsions ouverture : 15\u000d
+Etape20  O
+15:56:15 [Bench] Etape20  Ouverture atteinte (15 impulsions) après test défaut capteur.
+15:56:15 [Bench] uverture atteinte (15 impulsions) après test défaut capteur.
+15:56:15 [CF carte] @@@@@@@@******
+15:56:15 [CF carte] @@@@@@@@******
+15:56:15 [CF carte] SET REF OK !!
+15:56:15 [CF carte] SET REF OK !!
+15:56:15 [CF carte] _CoverPosNow => 1
+15:56:15 [CF carte] _CoverLength : 31
+15:56:15 [CF carte] _CoverPosNow : 1
+15:56:15 [CF carte] _CoverPosNow => 1\u000d
+_CoverLength : 31\u000d
+_CoverPosNow : 1
+15:56:16 [CF carte] anciendefPas de defaut
+15:56:16 [CF carte] def actPas de defaut
+15:56:16 [CF carte] *** ELSE LOOP _CoverPosNow : 1
+15:56:16 [CF carte] *** ELSE LOOP _CoverLength : 31
+15:56:16 [CF carte] *** ELSE LOOP TypePool = 0
+15:56:16 [CF carte] anciendefPas de defaut\u000d
+def actPas de defaut\u000d
+*** ELSE LOOP _CoverPosNow : 1\u000d
+*** ELSE LOOP _CoverLength : 31\u000d
+*** ELSE LOOP TypePool = 0
+15:56:17 [Bench] Connexion à a0:b7:65:14:93:fa
+15:56:17 [Bench] Connecté au serveur BLE
+15:56:17 [Bench] Etape21 BLE connecté
+15:56:17 [Bench] Connexion à a0:b7:65:14:93:fa\u000d
+Connecté au serveur BLE\u000d
+Etape21 BLE connecté
+15:56:17 [Bench] Etape21 Connecté
+15:56:17 [CF carte] Received Value: C
+15:56:17 [CF carte] Received Value: C
+15:56:17 [Bench] Etape21 Connecté avec succès au carte cf cover
+15:56:17 [Bench] Etape22 fermeture volet avec bluetooth pendant 20s
+15:56:17 [Bench] avec succès au carte cf cover\u000d
+Etape22 fermeture volet avec bluetooth pendant 20s
+15:56:17 [CF carte] ADC POWER_REFF : 1184
+15:56:17 [CF carte] POWER_REFF : 1214
+15:56:17 [CF carte] _CoverPosNow => 1
+15:56:17 [CF carte] CLOSING COVER !!
+15:56:17 [CF carte] ADC POWER_REFF : 1184\u000d
+POWER_REFF : 1214\u000d
+_CoverPosNow => 1\u000d
+CLOSING COVER !!
+15:56:17 [CF carte] _CoverPosNow
+15:56:17 [CF carte] _CoverPosNow => 2
+15:56:17 [CF carte] => 2
+15:56:18 [CF carte] _CoverPosNow => 3
+15:56:18 [CF carte] _CoverPosNow => 3
+15:56:18 [CF carte] _CoverPosNow => 4
+15:56:18 [CF carte] _CoverPosNow => 4
+15:56:19 [CF carte] _CoverPos
+15:56:19 [CF carte] _CoverPosNow => 5
+15:56:19 [CF carte] Now => 5
+15:56:19 [CF carte] _CoverPosNow => 6
+15:56:19 [CF carte] _CoverPosNow => 6
+15:56:20 [CF carte] _CoverPosNow => 7
+15:56:20 [CF carte] _CoverPosNow => 7
+15:56:20 [CF carte] _CoverPosNow => 8
+15:56:20 [CF carte] _CoverPosNow => 8
+15:56:20 [CF carte] _Cov
+15:56:20 [CF carte] _CoverPosNow => 9
+15:56:20 [CF carte] erPosNow => 9
+15:56:21 [CF carte] _CoverPosNow => 10
+15:56:21 [CF carte] _CoverPosNow => 10
+15:56:21 [CF carte] _CoverPosNow => 11
+15:56:21 [CF carte] _CoverPosNow => 11
+15:56:21 [CF carte] _
+15:56:22 [CF carte] _CoverPosNow => 12
+15:56:22 [CF carte] CoverPosNow => 12
+15:56:22 [CF carte] _CoverPosNow => 13
+15:56:22 [CF carte] _CoverPosNow => 13
+15:56:22 [CF carte] _CoverPosNow => 14
+15:56:22 [CF carte] _CoverPosNow => 14
+15:56:23 [CF carte] _CoverPosNow => 15
+15:56:23 [CF carte] _CoverPosNow => 15
+15:56:23 [CF carte] _CoverPosNow => 16
+15:56:23 [CF carte] _CoverPosNow => 16
+15:56:24 [CF carte] _CoverPosNow => 17
+15:56:24 [CF carte] _CoverPosNow => 17
+15:56:24 [CF carte] _CoverPosNow => 18
+15:56:24 [CF carte] _CoverPosNow => 18
+15:56:25 [CF carte] _CoverPosNow =>
+15:56:25 [CF carte] _CoverPosNow => 19
+15:56:25 [CF carte] 19
+15:56:25 [CF carte] _CoverPosNow =>
+15:56:25 [CF carte] _CoverPosNow => 20
+15:56:25 [CF carte] 20
+15:56:25 [CF carte] _C
+15:56:25 [CF carte] _CoverPosNow => 21
+15:56:25 [CF carte] overPosNow => 21
+15:56:26 [CF carte] _CoverPosNow => 22
+15:56:26 [CF carte] _CoverPosNow => 22
+15:56:26 [CF carte] _CoverPosNow => 23
+15:56:26 [CF carte] _CoverPosNow => 23
+15:56:26 [CF carte] _CoverPosNow => 24
+15:56:26 [CF carte] _CoverPosNow => 24
+15:56:27 [CF carte] _CoverPosNow => 25
+15:56:27 [CF carte] _CoverPosNow => 25
+15:56:27 [CF carte] _CoverPosNow => 26
+15:56:27 [CF carte] _CoverPosNow => 26
+15:56:28 [CF carte] _CoverPosNow => 27
+15:56:28 [CF carte] _CoverPosNow => 27
+15:56:28 [CF carte] _CoverPosNow => 28
+15:56:28 [CF carte] _CoverPosNow => 28
+15:56:29 [CF carte] _CoverPosNow => 29
+15:56:29 [CF carte] _CoverPosNow => 29
+15:56:29 [CF carte] _CoverPosNow => 30
+15:56:29 [CF carte] _CoverPosNow => 30
+15:56:30 [CF carte] _CoverPosNow =
+15:56:30 [CF carte] _CoverPosNow => 31
+15:56:30 [CF carte] > 31
+15:56:30 [CF carte] limit max
+15:56:30 [CF carte] _CoverLength : 31
+15:56:30 [CF carte] _CoverPosNow : 31
+15:56:30 [CF carte] anciendefPas de defaut
+15:56:30 [CF carte] def actPas de defaut
+15:56:30 [CF carte] *** ELSE LOOP _CoverPosNow : 31
+15:56:30 [CF carte] *** ELSE LOOP _CoverLength : 31
+15:56:30 [CF carte] *** ELSE LOOP TypePool = 0
+15:56:30 [CF carte] limit max\u000d
+_CoverLength : 31\u000d
+_CoverPosNow : 31\u000d
+anciendefPas de defaut\u000d
+def actPas de defaut\u000d
+*** ELSE LOOP _CoverPosNow : 31\u000d
+*** ELSE LOOP _CoverLength : 31\u000d
+*** ELSE LOOP TypePool = 0
+15:56:37 [Bench] Etape23 Ouverture volet avec bluetooth pendant 20s
+15:56:37 [Bench] Etape23 Ouverture volet avec bluetooth pendant 20s
+15:56:37 [CF carte] Received Value: S
+15:56:37 [CF carte] Received Value: S
+15:56:37 [CF carte] Received Value: O
+15:56:37 [CF carte] 0
+15:56:37 [CF carte] 1
+15:56:37 [CF carte] Received Value: O\u000d
+0\u000d
+1
+15:56:37 [CF carte] ADC POWER_REFF : 1189
+15:56:37 [CF carte] POWER_REFF : 1219
+15:56:37 [CF carte] _CoverPosNow => 31
+15:56:37 [CF carte] OPENING COVER !!
+15:56:37 [CF carte] ADC POWER_REFF : 1189\u000d
+POWER_REFF : 1219\u000d
+_CoverPosNow => 31\u000d
+OPENING COVER !!
+15:56:38 [CF carte] _Co
+15:56:38 [CF carte] _CoverPosNow => 30
+15:56:38 [CF carte] verPosNow => 30
+15:56:38 [CF carte] _CoverPosNow => 29
+15:56:38 [CF carte] _CoverPosNow => 29
+15:56:39 [CF carte] New_READ_CURRENT2>>>> 157
+15:56:39 [CF carte] New_READ_CURRENT2>>>> 157
+15:56:39 [CF carte] _CoverPosNow => 28
+15:56:39 [CF carte] _CoverPosNow => 28
+15:56:39 [CF carte] New_READ_CURRENT2>>>> 157
+15:56:39 [CF carte] New_READ_CURRENT2>>>> 157
+15:56:39 [CF carte] _CoverPosNow => 27
+15:56:39 [CF carte] New_READ_CURRENT2>>>> 156
+15:56:39 [CF carte] _CoverPosNow => 27\u000d
+New_READ_CURRENT2>>>> 156
+15:56:39 [CF carte] _CoverPosNow => 26
+15:56:39 [CF carte] _CoverPosNow => 26
+15:56:40 [CF carte] New_READ_CURRENT2>>>> 156
+15:56:40 [CF carte] New_READ_CURRENT2>>>> 156
+15:56:40 [CF carte] New_READ_CURRENT2>>>> 157
+15:56:40 [CF carte] New_READ_CURRENT2>>>> 157
+15:56:40 [CF carte] _CoverPosNow => 25
+15:56:40 [CF carte] _CoverPosNow => 25
+15:56:40 [CF carte] New_READ_CURRENT2>>>> 157
+15:56:40 [CF carte] New_READ_CURRENT2>>>> 157
+15:56:40 [CF carte] _CoverPosNow => 24
+15:56:40 [CF carte] _CoverPosNow => 24
+15:56:41 [CF carte] _CoverPosNow => 23
+15:56:41 [CF carte] _CoverPosNow => 23
+15:56:41 [CF carte] _CoverPosNow => 22
+15:56:41 [CF carte] _CoverPosNow => 22
+15:56:42 [CF carte] _CoverPosNow => 21
+15:56:42 [CF carte] _CoverPosNow => 21
+15:56:42 [CF carte] _CoverPosNow => 20
+15:56:42 [CF carte] _CoverPosNow => 20
+15:56:42 [CF carte] _CoverPosNow => 19
+15:56:42 [CF carte] _CoverPosNow => 19
+15:56:43 [CF carte] _CoverPosNow => 18
+15:56:43 [CF carte] _CoverPosNow => 18
+15:56:43 [CF carte] _CoverPosNow => 17
+15:56:43 [CF carte] _CoverPosNow => 17
+15:56:43 [CF carte] _CoverPosNow => 16
+15:56:43 [CF carte] _CoverPosNow => 16
+15:56:44 [CF carte] _CoverPosNow => 15
+15:56:44 [CF carte] _CoverPosNow => 15
+15:56:44 [CF carte] _CoverPosNow => 14
+15:56:44 [CF carte] _CoverPosNow => 14
+15:56:45 [CF carte] _CoverPosNow => 13
+15:56:45 [CF carte] _CoverPosNow => 13
+15:56:45 [CF carte] _CoverPosNow => 1
+15:56:45 [CF carte] _CoverPosNow => 12
+15:56:45 [CF carte] 2
+15:56:46 [CF carte] _CoverPosNow => 11
+15:56:46 [CF carte] _CoverPosNow => 11
+15:56:46 [CF carte] _Co
+15:56:46 [CF carte] _CoverPosNow => 10
+15:56:46 [CF carte] verPosNow => 10
+15:56:47 [CF carte] _CoverPosNow => 9
+15:56:47 [CF carte] _CoverPosNow => 9
+15:56:47 [CF carte] _CoverPosNow => 8
+15:56:47 [CF carte] _CoverPosNow => 8
+15:56:47 [CF carte] _CoverPosNow => 7
+15:56:47 [CF carte] _CoverPosNow => 7
+15:56:48 [CF carte] _CoverPosNow => 6
+15:56:48 [CF carte] _CoverPosNow => 6
+15:56:48 [CF carte] _CoverPo
+15:56:48 [CF carte] _CoverPosNow => 5
+15:56:48 [CF carte] sNow => 5
+15:56:48 [CF carte] _CoverPosNow => 4
+15:56:48 [CF carte] _CoverPosNow => 4
+15:56:49 [CF carte] _CoverPosNow => 3
+15:56:49 [CF carte] _CoverPosNow => 3
+15:56:49 [CF carte] _CoverPosNow => 2
+15:56:49 [CF carte] _CoverPosNow => 2
+15:56:50 [CF carte] _CoverPosNow => 1
+15:56:50 [CF carte] _CoverPosNow => 1
+15:56:50 [CF carte] _CoverPosNow => 0
+15:56:50 [CF carte] 0@
+15:56:50 [CF carte] _CoverPosNow => 0\u000d
+0@
+15:56:52 [CF carte] MOTOR IN LIMIT : 0
+15:56:52 [CF carte] _CoverLength : 31
+15:56:52 [CF carte] _CoverPosNow : 0
+15:56:52 [CF carte] MOTOR IN LIMIT : 0\u000d
+_CoverLength : 31\u000d
+_CoverPosNow : 0
+15:56:52 [CF carte] anciendefPas de defaut
+15:56:52 [CF carte] def actPas de defaut
+15:56:52 [CF carte] *** ELSE LOOP _CoverPosNow : 0
+15:56:52 [CF carte] *** ELSE LOOP _CoverLength : 31
+15:56:52 [CF carte] *** ELSE LOOP TypePool = 0
+15:56:52 [CF carte] anciendefPas de defaut\u000d
+def actPas de defaut\u000d
+*** ELSE LOOP _CoverPosNow : 0\u000d
+*** ELSE LOOP _CoverLength : 31\u000d
+*** ELSE LOOP TypePool = 0
+15:56:57 [CF carte] Received Value: S
+15:56:57 [CF carte] Received Value: S
+15:56:57 [Bench] Etape27 cliquer sur la bouton setup  ne la relache pas cliquer sur start pour confirmer
+15:56:57 [Bench] Etape27 cliquer sur la bouton setup  ne la relache pas cliquer sur start pour confirmer
+15:56:58 [CF carte] ets Jul 29 2019 12:21:46
+15:56:58 [CF carte] rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+15:56:58 [CF carte] configsip: 0, SPIWP:0xee
+15:56:58 [CF carte] ets Jul 29 2019 12:21:46\u000d
+\u000d
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)\u000d
+configsip: 0, SPIWP:0xee\u000d
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x
+15:56:58 [CF carte] �\u0004<�\u0000\u000e��<\u0000�
+15:56:58 [CF carte] <��\u0010ΆBp8%��b`�\u0011y\u001b\u001f�x��\u0000\u0002\u0000�A\u0000@�p�\u0000\u0005\u000c\u0000\u0000���\u0000�\u0000�\u0000�\u0000�\u0000\u0000\u0000�\u0000\u0000\u0000�\u0000����\u0000\u0000\u0000�\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000
+15:57:04 [Bench] Déconnecté du serveur BLE
+15:57:04 [Bench] Déconnecté du serveur BLE
+15:57:04 [Bench] Déconnecté du serveur BLE\u000d
+Déconnecté du serveur BLE
+15:57:18 [CF carte] clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x�\u0004<�\u0000\u000e��<\u0000�<��\u0010ΆBp8%��b`�\u0011y\u001b\u001f�x��\u0000\u0002\u0000�A\u0000@�p�\u0000\u0005\u000c\u0000\u0000���\u0000�\u0000�\u0000�\u0000�\u0000\u0000\u0000�\u0000\u0000\u0000�\u0000����\u0000\u0000\u0000�\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000ets Jul 29 2019 12:21:46
+15:57:18 [CF carte] ets Jul 29 2019 12:21:46\u000d
+\u000d
+rst:0x1 (POWERON_RESET),boot:
+15:57:18 [CF carte] rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+15:57:18 [CF carte] configsip: 0, SPIWP:0xee
+15:57:18 [CF carte] clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+15:57:18 [CF carte] mode:DIO, clock div:1
+15:57:18 [CF carte] load:0x3fff0030,len:4916
+15:57:18 [CF carte] load:0x40078000,len:16492
+15:57:18 [CF carte] load:0x40080400,len:4
+15:57:18 [CF carte] load:0x40080404,len:3524
+15:57:18 [CF carte] entry 0x400805b8
+15:57:18 [CF carte] 0x13 (SPI_FAST_FLASH_BOOT)\u000d
+configsip: 0, SPIWP:0xee\u000d
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00\u000d
+mode:DIO, clock div:1\u000d
+load:0x3fff0030,len:4916\u000d
+load:0x40078000,len:16492\u000d
+load:0x40080400,len:4\u000d
+load:0x40080404,len:3524\u000d
+entry 0x400805b8
+15:57:19 [CF carte] Débutsetupù: 194772 bytes
+15:57:19 [CF carte] Débutsetupù: 194772 bytes
+15:57:20 [CF carte] CONFIG I/O OK !vers final
+15:57:20 [CF carte] CONFIG I/O OK !vers final
+15:57:24 [CF carte] Namespace 'wifi' effacé.
+15:57:24 [CF carte] Namespace 'wifi' effacé.
+Nam
+15:57:24 [CF carte] Namespace 'bt_config' effacé.
+15:57:24 [CF carte] Namespace 'rf' effacé.
+15:57:24 [CF carte] Namespace 'otadata' effacé.
+15:57:24 [CF carte] espace 'bt_config' effacé.
+Namespace 'rf' effacé.
+Namespace 'otadata' effacé.
+15:57:24 [CF carte] Namespace 'nvs.net80211' effacé.
+15:57:24 [CF carte] Namespace 'nvs.wifi' effacé.
+15:57:24 [CF carte] Namespace 'nvs.bl' effacé.
+15:57:24 [CF carte] Namespace 'nvs.storage' effacé.
+15:57:24 [CF carte] Namespace 'nvs.sec_cert' effacé.
+15:57:24 [CF carte] Namespace 'nvs.net80211' effacé.
+Namespace 'nvs.wifi' effacé.
+Namespace 'nvs.bl' effacé.
+Namespace 'nvs.storage' effacé.
+Namespace 'nvs.sec_cert' effacé.
+15:57:24 [CF carte] DATA RESTORED OK !
+15:57:24 [CF carte] RoueCodeuse : 0
+15:57:24 [CF carte] SWIMMING POOL LENGTH : 0
+15:57:24 [CF carte] COVER ACTUAL POSITION : 0
+15:57:24 [CF carte] __RAMPE : 9
+15:57:24 [CF carte] DATA RESTORED OK !\u000d
+RoueCodeuse : 0\u000d
+SWIMMING POOL LENGTH : 0\u000d
+COVER ACTUAL POSITION : 0\u000d
+__RAMPE : 9
+15:57:25 [CF carte] A0:B7:65:14:93:FAmacAdd : A0:B7:65:14:93:FA
+15:57:25 [CF carte] LivePoolVs-F8931465B7A0
+15:57:25 [CF carte] A0:B7:65:14:93:FAmacAdd : A0:B7:65:14:93:FA\u000d
+LivePoolVs-F8931465B7A0
+15:57:34 [CF carte] ADC POWER_REFF : 1218
+15:57:34 [CF carte] DEFAULT POWER_REFF : 1248
+15:57:34 [CF carte] scaaann
+15:57:34 [CF carte] ADC POWER_REFF : 1218\u000d
+DEFAULT POWER_REFF : 1248\u000d
+scaaann
+15:57:34 [CF carte] anciendefPas de defaut
+15:57:34 [CF carte] def actPas de defaut
+15:57:34 [CF carte] anciendefPas de defaut\u000d
+def actPas de defaut\u000d
+*** ELSE LOOP _
+15:57:35 [CF carte] *** ELSE LOOP _CoverPosNow : 0
+15:57:35 [CF carte] *** ELSE LOOP _CoverLength : 0
+15:57:35 [CF carte] *** ELSE LOOP TypePool = 0
+15:57:35 [CF carte] CoverPosNow : 0\u000d
+*** ELSE LOOP _CoverLength : 0\u000d
+*** ELSE LOOP TypePool = 0
+15:57:43 [CF carte] networks found
+15:57:43 [CF carte] 0.00
+15:57:43 [CF carte] 0.00
+15:57:43 [CF carte] networks found\u000d
+0.00\u000d
+0.00

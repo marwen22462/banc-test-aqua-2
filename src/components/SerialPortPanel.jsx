@@ -107,6 +107,8 @@ function SerialPortPanel({ onViewReports }) {
       status: 'pending',
       message: '',
       timestamp: '',
+      startedAt: null,
+      completedAt: null,
     })),
   )
   const programPortRef = useRef(null)
@@ -162,6 +164,9 @@ function SerialPortPanel({ onViewReports }) {
       title: step.title,
       status: 'pending',
       message: '',
+      timestamp: '',
+      startedAt: null,
+      completedAt: null,
     })))
     setProgramOutput('Waiting for next device output...')
     setDeviceName('No device name yet')
@@ -345,12 +350,41 @@ function SerialPortPanel({ onViewReports }) {
     setTimeout(() => setToast(null), ms)
   }
 
-  const addSerialTrace = (portType, line) => {
+  const sanitizeSerialText = (value) => {
+    if (value === null || value === undefined) {
+      return ''
+    }
+
+    return String(value).replace(/[\u0000-\u0008\u000B-\u001F\u007F-\u009F]/g, (char) => `\\u${char.charCodeAt(0).toString(16).padStart(4, '0')}`)
+  }
+
+  const addSerialTrace = (portType, line, rawValue = null) => {
     const timestamp = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' })
+    const rawBuffer = Buffer.isBuffer(rawValue)
+      ? rawValue
+      : ArrayBuffer.isView(rawValue)
+        ? Buffer.from(rawValue.buffer, rawValue.byteOffset, rawValue.byteLength)
+        : Buffer.isBuffer(line)
+          ? line
+          : null
+
+    const textValue = typeof line === 'string' ? line : String(line ?? '')
+    const printableText = sanitizeSerialText(textValue).trim()
+
+    let rawHex = ''
+    if (rawBuffer) {
+      rawHex = rawBuffer.toString('hex')
+    } else if (textValue) {
+      rawHex = Buffer.from(textValue, 'utf8').toString('hex')
+    }
+
     const traceEntry = {
       id: `${timestamp}-${portType}-${Math.random().toString(16).slice(2)}`,
       portType,
-      line,
+      line: printableText,
+      raw: printableText,
+      rawHex,
+      text: printableText,
       timestamp,
     }
 
@@ -485,6 +519,26 @@ function SerialPortPanel({ onViewReports }) {
     addLog(`Active receiving port detected: ${newest.path} (${newest.kind})`)
   }
 
+  const normalizeStepStatus = (status) => {
+    if (status === 'passed') return 'Passed'
+    if (status === 'failed') return 'Failed'
+    if (status === 'in-progress') return 'In progress'
+    return 'Pending'
+  }
+
+  const formatDurationFromMs = (durationMs) => {
+    if (!Number.isFinite(durationMs) || durationMs <= 0) {
+      return '00:00:00'
+    }
+
+    const totalSeconds = Math.max(0, Math.floor(durationMs / 1000))
+    const hours = Math.floor(totalSeconds / 3600)
+    const minutes = Math.floor((totalSeconds % 3600) / 60)
+    const seconds = totalSeconds % 60
+
+    return [hours, minutes, seconds].map((value) => String(value).padStart(2, '0')).join(':')
+  }
+
   const buildTestPayload = () => {
     const passed = steps.filter((step) => step.status === 'passed').length
     const failed = steps.filter((step) => step.status === 'failed').length
@@ -497,14 +551,81 @@ function SerialPortPanel({ onViewReports }) {
       return acc
     }, {})
 
+    const processEntries = [
+      ...logEntries.map((entry, index) => ({
+        id: `log-${index}`,
+        source: 'bench',
+        text: sanitizeSerialText(String(entry)),
+        timestamp: new Date().toISOString(),
+      })),
+      ...serialTrace.map((entry, index) => ({
+        id: `trace-${index}`,
+        source: entry.portType || 'device',
+        text: sanitizeSerialText(String(entry.line || '')),
+        timestamp: entry.timestamp || new Date().toISOString(),
+      })),
+    ]
+
+    const processLogText = processEntries
+      .map((entry) => `[${entry.source}] ${entry.text}`)
+      .join('\n')
+
+    const reportDate = new Date().toISOString()
+
+    const validStepTimes = steps
+      .filter((step) => step.startedAt || step.completedAt || step.timestamp)
+      .map((step) => ({
+        startedAt: step.startedAt ? Date.parse(step.startedAt) : null,
+        completedAt: step.completedAt ? Date.parse(step.completedAt) : (step.timestamp ? Date.parse(step.timestamp) : null),
+      }))
+      .filter((time) => Number.isFinite(time.startedAt) || Number.isFinite(time.completedAt))
+
+    const firstStepStart = validStepTimes
+      .map((entry) => entry.startedAt)
+      .filter((value) => Number.isFinite(value))
+      .sort((a, b) => a - b)[0] || null
+
+    const lastStepEnd = validStepTimes
+      .map((entry) => entry.completedAt)
+      .filter((value) => Number.isFinite(value))
+      .sort((a, b) => a - b).at(-1) || null
+
+    const totalDurationMs = firstStepStart && lastStepEnd ? lastStepEnd - firstStepStart : 0
+
+    const stepRecords = steps.map((step, index, stepList) => {
+      const startedAtMs = step.startedAt ? Date.parse(step.startedAt) : null
+      const nextStep = stepList[index + 1]
+      const nextStartedAtMs = nextStep && nextStep.startedAt ? Date.parse(nextStep.startedAt) : null
+      const completedAtMs = Number.isFinite(nextStartedAtMs)
+        ? nextStartedAtMs
+        : (step.completedAt ? Date.parse(step.completedAt) : (step.timestamp ? Date.parse(step.timestamp) : null))
+      const elapsedMs = Number.isFinite(startedAtMs) && Number.isFinite(completedAtMs) ? Math.max(0, completedAtMs - startedAtMs) : 0
+
+      return {
+        id: step.id,
+        title: step.title,
+        status: step.status,
+        statusLabel: normalizeStepStatus(step.status),
+        message: step.message,
+        timestamp: step.timestamp,
+        startedAt: step.startedAt || null,
+        completedAt: step.completedAt || null,
+        durationMs: elapsedMs,
+        durationLabel: formatDurationFromMs(elapsedMs),
+      }
+    })
+
+    const passedStepRecords = stepRecords.filter((step) => step.status === 'passed')
+
     return {
-      reportId: `${(deviceLabel || 'device').toLowerCase().replace(/[^a-z0-9]+/g, '-')}-${cycleCount}-${new Date().toISOString()}`,
-      savedAt: new Date().toISOString(),
+      reportId: `${(deviceLabel || 'device').toLowerCase().replace(/[^a-z0-9]+/g, '-')}-${cycleCount}-${reportDate}`,
+      savedAt: reportDate,
+      testDate: reportDate,
       status: overallStatus,
       finalResult: lastResult,
       deviceLabel,
+      deviceName: deviceName || deviceLabel || capturedName || 'Unknown device',
       cycleCount,
-      deviceName,
       capturedName,
       programOutput,
       message,
@@ -515,13 +636,15 @@ function SerialPortPanel({ onViewReports }) {
         failed,
         pending,
       },
-      steps: steps.map((step) => ({
-        id: step.id,
-        title: step.title,
-        status: step.status,
-        message: step.message,
-        timestamp: step.timestamp,
-      })),
+      duration: {
+        startedAt: firstStepStart ? new Date(firstStepStart).toISOString() : null,
+        finishedAt: lastStepEnd ? new Date(lastStepEnd).toISOString() : null,
+        totalDurationMs,
+        totalDurationLabel: formatDurationFromMs(totalDurationMs),
+      },
+      steps: stepRecords,
+      passedSteps: passedStepRecords,
+      completedSteps: passedStepRecords.length,
       portsDetected: ports,
       selectedPorts: {
         testBenchPort: programPortPath,
@@ -534,11 +657,16 @@ function SerialPortPanel({ onViewReports }) {
       runtimeErrors,
       serialTrace,
       logEntries,
+      fullProcessLog: processEntries,
+      processLogText,
       metadata: {
         benchPort: programPortPath,
         cfCartePort: deviceNamePortPath,
-        testStartedAt: steps.find((step) => step.status !== 'pending')?.timestamp || null,
-        testFinishedAt: steps.findLast((step) => step.status !== 'pending')?.timestamp || null,
+        testStartedAt: firstStepStart ? new Date(firstStepStart).toISOString() : null,
+        testFinishedAt: lastStepEnd ? new Date(lastStepEnd).toISOString() : null,
+        totalDurationMs,
+        totalDurationLabel: formatDurationFromMs(totalDurationMs),
+        deviceName: deviceName || deviceLabel || capturedName || 'Unknown device',
       },
     }
   }
@@ -551,24 +679,78 @@ function SerialPortPanel({ onViewReports }) {
     const payload = buildTestPayload()
     const fs = getNodeFs()
     const path = getNodePath()
-    const os = getNodeOs()
 
-    if (!fs || !path || !os) {
+    if (!fs || !path) {
       addLog('Local JSON export is unavailable outside Electron.')
       return
     }
 
     try {
-      const reportDir = path.join(os.homedir(), 'device-test-reports')
-      fs.mkdirSync(reportDir, { recursive: true })
+      const projectDataDir = path.resolve(process.cwd(), 'src', 'data')
+      const filePath = path.join(projectDataDir, 'data.json')
 
-      const safeLabel = String(deviceLabel || payload.deviceLabel || 'device').replace(/[^a-z0-9-_]/gi, '_')
-      const timeStamp = new Date().toISOString().replace(/[:.]/g, '-')
-      const fileName = `device-test-${safeLabel}-${timeStamp}.json`
-      const filePath = path.join(reportDir, fileName)
+      fs.mkdirSync(projectDataDir, { recursive: true })
+
+      let previousReports = []
+      if (fs.existsSync(filePath)) {
+        try {
+          const existingText = fs.readFileSync(filePath, 'utf8')
+          const existingData = JSON.parse(existingText)
+
+          if (Array.isArray(existingData)) {
+            previousReports = existingData
+          } else if (existingData && Array.isArray(existingData.reports)) {
+            previousReports = existingData.reports
+          } else if (existingData && typeof existingData === 'object') {
+            previousReports = [existingData]
+          }
+        } catch (error) {
+          previousReports = []
+        }
+      }
+
+      const fullPayload = {
+        ...payload,
+        deviceName: payload.deviceName || payload.deviceLabel || 'Unknown device',
+        savedAt: payload.savedAt || new Date().toISOString(),
+        testDate: payload.savedAt || new Date().toISOString(),
+      }
+
+      const passedSteps = (payload.steps || []).filter((step) => step.status === 'passed')
+      const greenStepLog = passedSteps.map((step, index) => ({
+        order: index + 1,
+        id: step.id,
+        title: step.title,
+        status: 'passed',
+        statusLabel: normalizeStepStatus(step.status),
+        startedAt: step.startedAt || null,
+        completedAt: step.completedAt || null,
+        durationMs: step.durationMs || 0,
+        durationLabel: step.durationLabel || '00:00:00',
+        message: step.message || '',
+      }))
+
+      const finalizedPayload = {
+        ...fullPayload,
+        passedSteps: greenStepLog,
+        completedSteps: greenStepLog.length,
+        stepStatusSummary: {
+          total: (payload.steps || []).length,
+          passed: greenStepLog.length,
+          failed: (payload.steps || []).filter((step) => step.status === 'failed').length,
+          pending: (payload.steps || []).filter((step) => step.status === 'pending').length,
+        },
+      }
+
+      const reportStore = {
+        generatedAt: new Date().toISOString(),
+        totalReports: previousReports.length + 1,
+        latest: finalizedPayload,
+        reports: [...previousReports, finalizedPayload],
+      }
 
       reportSavedRef.current = cycleCount
-      fs.writeFileSync(filePath, JSON.stringify(payload, null, 2), 'utf8')
+      fs.writeFileSync(filePath, JSON.stringify(reportStore, null, 2), 'utf8')
       addLog(`JSON report saved locally: ${filePath}`)
 
       if (!API_ENDPOINT) {
@@ -605,8 +787,9 @@ function SerialPortPanel({ onViewReports }) {
       const allDone = steps.length > 0 && steps.every((s) => s.status !== 'pending')
       const finStep = steps.find((s) => s.id === 'fin-test')
       const finPassed = !!(finStep && finStep.status === 'passed')
+      const finalSignalPassed = steps.some((s) => ['remise-a-zero', 'ble-fermeture-volet', 'ble-ouverture-volet', 'fin-test'].includes(s.id) && s.status === 'passed')
 
-      if ((allDone || finPassed) && reportSavedRef.current !== cycleCount) {
+      if ((allDone || finPassed || finalSignalPassed) && reportSavedRef.current !== cycleCount) {
         ;(async () => {
           try {
             await saveTestReport(true)
@@ -883,10 +1066,17 @@ function SerialPortPanel({ onViewReports }) {
             status: 'passed',
             message: 'Remise a zero avec success Appuier start pour finir le test. cliquer sur reset pour refair le test ',
             timestamp: ts,
+            startedAt: step.startedAt || new Date().toISOString(),
+            completedAt: new Date().toISOString(),
           }
         : step,
       ))
       setLastResult('PASS - Remise a zero')
+      setTimeout(() => {
+        if (reportSavedRef.current !== cycleCount) {
+          saveTestReport(true)
+        }
+      }, 0)
       return
     }
 
@@ -899,6 +1089,8 @@ function SerialPortPanel({ onViewReports }) {
             status: 'passed',
             message: step.id === 'defaut-capteur' ? 'Contact SEL - test validé. Appuyer sur START pour contunier ' : 'Vérification des fins de course programmées et contact Sel OK.',
             timestamp: ts,
+            startedAt: step.startedAt || new Date().toISOString(),
+            completedAt: new Date().toISOString(),
           }
         }
         return step
@@ -927,13 +1119,21 @@ function SerialPortPanel({ onViewReports }) {
         }
 
         const ts = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false })
+        const startedAt = step.startedAt || new Date().toISOString()
         const measuredMessage = extractStepMessage(step.id, cleanedLine)
         const displayMessage = (/tension-circuit|tension-moteur|tension-3v/i.test(step.id) && lastVoltageReadingsRef.current[step.id])
           ? `${measuredMessage || `Tension ${step.title}`}`
           : measuredMessage || cleanedLine
 
         if (failPattern.test(cleanedLine)) {
-          const nextState = { ...step, status: 'failed', message: displayMessage || cleanedLine, timestamp: ts }
+          const nextState = {
+            ...step,
+            status: 'failed',
+            message: displayMessage || cleanedLine,
+            timestamp: ts,
+            startedAt,
+            completedAt: new Date().toISOString(),
+          }
           setLastResult(`FAIL - ${step.title}`)
           return nextState
         }
@@ -947,6 +1147,8 @@ function SerialPortPanel({ onViewReports }) {
             status: completed ? 'passed' : 'pending',
             message: displayMessage || cleanedLine,
             timestamp: ts,
+            startedAt: step.startedAt || startedAt,
+            completedAt: completed ? new Date().toISOString() : step.completedAt,
           }
 
           if (completed) {
@@ -964,6 +1166,8 @@ function SerialPortPanel({ onViewReports }) {
             status: completed ? 'passed' : 'pending',
             message: displayMessage || cleanedLine,
             timestamp: ts,
+            startedAt: step.startedAt || startedAt,
+            completedAt: completed ? new Date().toISOString() : step.completedAt,
           }
 
           if (completed) {
@@ -981,6 +1185,8 @@ function SerialPortPanel({ onViewReports }) {
             status: verificationSuccess ? 'passed' : 'pending',
             message: displayMessage || cleanedLine,
             timestamp: ts,
+            startedAt: step.startedAt || startedAt,
+            completedAt: verificationSuccess ? new Date().toISOString() : step.completedAt,
           }
 
           if (verificationSuccess) {
@@ -998,6 +1204,8 @@ function SerialPortPanel({ onViewReports }) {
             status: completed ? 'passed' : 'pending',
             message: displayMessage || cleanedLine,
             timestamp: ts,
+            startedAt: step.startedAt || startedAt,
+            completedAt: completed ? new Date().toISOString() : step.completedAt,
           }
 
           if (completed) {
@@ -1015,6 +1223,8 @@ function SerialPortPanel({ onViewReports }) {
             status: completed ? 'passed' : 'pending',
             message: displayMessage || cleanedLine,
             timestamp: ts,
+            startedAt: step.startedAt || startedAt,
+            completedAt: completed ? new Date().toISOString() : step.completedAt,
           }
 
           if (completed) {
@@ -1032,6 +1242,8 @@ function SerialPortPanel({ onViewReports }) {
             status: completed ? 'passed' : 'pending',
             message: displayMessage || cleanedLine,
             timestamp: ts,
+            startedAt: step.startedAt || startedAt,
+            completedAt: completed ? new Date().toISOString() : step.completedAt,
           }
 
           if (completed) {
@@ -1049,6 +1261,8 @@ function SerialPortPanel({ onViewReports }) {
             status: completed ? 'passed' : 'pending',
             message: displayMessage || cleanedLine,
             timestamp: ts,
+            startedAt: step.startedAt || startedAt,
+            completedAt: completed ? new Date().toISOString() : step.completedAt,
           }
 
           if (completed) {
@@ -1066,6 +1280,8 @@ function SerialPortPanel({ onViewReports }) {
             status: completed ? 'passed' : 'pending',
             message: displayMessage || cleanedLine,
             timestamp: ts,
+            startedAt: step.startedAt || startedAt,
+            completedAt: completed ? new Date().toISOString() : step.completedAt,
           }
 
           if (completed) {
@@ -1086,6 +1302,8 @@ function SerialPortPanel({ onViewReports }) {
             status: finished ? 'passed' : 'pending',
             message: displayMessage || cleanedLine,
             timestamp: ts,
+            startedAt: step.startedAt || startedAt,
+            completedAt: finished ? new Date().toISOString() : step.completedAt,
           }
 
           if (finished) {
@@ -1096,7 +1314,14 @@ function SerialPortPanel({ onViewReports }) {
           return nextState
         }
 
-        const nextState = { ...step, status: 'passed', message: displayMessage || cleanedLine, timestamp: ts }
+        const nextState = {
+          ...step,
+          status: 'passed',
+          message: displayMessage || cleanedLine,
+          timestamp: ts,
+          startedAt: step.startedAt || startedAt,
+          completedAt: new Date().toISOString(),
+        }
         setLastResult(`PASS - ${step.title}`)
         return nextState
       }),
@@ -1264,7 +1489,13 @@ function SerialPortPanel({ onViewReports }) {
       }
 
       const processIncomingData = (rawChunk) => {
-        const chunkText = Buffer.isBuffer(rawChunk) ? rawChunk.toString('utf8') : String(rawChunk ?? '')
+        const rawBuffer = Buffer.isBuffer(rawChunk)
+          ? rawChunk
+          : ArrayBuffer.isView(rawChunk)
+            ? Buffer.from(rawChunk.buffer, rawChunk.byteOffset, rawChunk.byteLength)
+            : Buffer.from(String(rawChunk ?? ''), 'utf8')
+
+        const chunkText = rawBuffer.toString('utf8')
         if (!chunkText) {
           return
         }
@@ -1282,6 +1513,7 @@ function SerialPortPanel({ onViewReports }) {
             return
           }
 
+          const lineBuffer = Buffer.from(value, 'utf8')
           console.log(`[serial][${kind}][line] ${value}`)
 
           setLastPortActivity((current) => ({
@@ -1295,11 +1527,11 @@ function SerialPortPanel({ onViewReports }) {
           if (kind === 'program') {
             setProgramOutput(value)
             addLog(`Program RX: ${value}`)
-            addSerialTrace('program', value)
+            addSerialTrace('program', value, lineBuffer)
           } else {
             setDeviceName(value)
             addLog(`Device RX: ${value}`)
-            addSerialTrace('device', value)
+            addSerialTrace('device', value, lineBuffer)
           }
 
           // Detect equipment name pattern from any incoming serial line
@@ -1341,7 +1573,7 @@ function SerialPortPanel({ onViewReports }) {
             [kind]: Date.now(),
           }))
           setActivePortPath(portPath)
-          addSerialTrace(kind, rawValue)
+          addSerialTrace(kind, rawValue, rawBuffer)
         }
       }
 

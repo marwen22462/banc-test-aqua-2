@@ -7,14 +7,14 @@
   "type": "module",
   "main": "public/electron.js",
   "scripts": {
-    "dev": "vite --host --port 4174 --strictPort",
+    "dev": "vite --host --port 4175 --strictPort",
     "build": "vite build",
     "build:win": "npm run build && electron-builder --win --publish never",
     "dist": "npm run build:win",
     "lint": "eslint .",
-    "preview": "vite preview --host --port 4174 --strictPort",
-    "start": "concurrently -k \"npm run dev\" \"wait-on http://localhost:4174 && electron .\"",
-    "electron": "concurrently -k \"npm run dev\" \"wait-on http://localhost:4174 && electron .\""
+    "preview": "vite preview --host --port 4175 --strictPort",
+    "start": "concurrently -k \"npm run dev\" \"wait-on http://localhost:4175 && electron .\"",
+    "electron": "concurrently -k \"npm run dev\" \"wait-on http://localhost:4175 && electron .\""
   },
   "build": {
     "appId": "com.testapp.cfcover",
@@ -35,6 +35,7 @@
   },
   "dependencies": {
     "@serialport/parser-readline": "^13.0.0",
+    "jspdf": "^4.2.1",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "serialport": "^13.0.0"
